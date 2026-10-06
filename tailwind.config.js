@@ -26,8 +26,8 @@ export default {
       },
       fontFamily: {
         sans: ['"Montserrat"', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['"DM Serif Display"', '"Playfair Display"', 'Georgia', 'serif'],
-        display: ['"DM Serif Display"', '"Playfair Display"', 'Georgia', 'serif'],
+        serif: ['"Poppins"', 'sans-serif'],
+        display: ['"Poppins"', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       letterSpacing: {

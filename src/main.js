@@ -1451,7 +1451,7 @@ function initPortfolio() {
           </div>
           <div class="p-5 sm:p-6 space-y-2">
             <span class="text-xs text-neutral-400 block font-medium uppercase tracking-wider truncate">${project.client}</span>
-            <h3 class="font-bold text-base sm:text-lg text-neutral-900 group-hover:text-brand-orange transition-colors leading-snug line-clamp-2">
+            <h3 class="font-medium text-base sm:text-lg text-neutral-900 group-hover:text-brand-orange transition-colors leading-snug line-clamp-2">
               ${project.title}
             </h3>
             <div class="text-xs sm:text-sm text-neutral-500 font-light flex items-center gap-2 sm:gap-3 pt-1 sm:pt-2">
@@ -1920,7 +1920,7 @@ function initExpertiseAccordion() {
               0${idx + 1}
             </div>
             <div>
-              <h3 class="font-display text-lg sm:text-xl font-bold text-neutral-900">
+              <h3 class="font-display text-lg sm:text-xl font-medium text-neutral-900">
                 ${service.title}
               </h3>
               <p class="text-xs sm:text-sm text-neutral-600 font-light mt-0.5 max-w-3xl">

@@ -28,9 +28,9 @@
   }
 
   h1, h2, h3, .font-editorial {
-    font-family: 'DM Serif Display', Georgia, serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: -0.015em;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   p, span, a, button, input, select, textarea {

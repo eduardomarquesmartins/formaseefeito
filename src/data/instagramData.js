@@ -9,14 +9,14 @@ export const INSTAGRAM_CONFIG = {
 // Snapshot of the nine latest public posts checked on October 6, 2026.
 export const INSTAGRAM_POSTS = [
   {
-    id: 'DeKtztMvNim',
-    caption: 'Neste Outubro Rosa, reforçamos a importância do autoexame, da mamografia e do acompanhamento médico regular. O diagnóstico precoce aumenta muito as chances de cura. Cuide de você e incentive quem você ama a fazer o mesmo. #OutubroRosa #CâncerDeMama #DiagnósticoPrecoce #Prevenção #FormasEEfeito',
+    id: 'DdpPxtaPATN',
+    caption: 'A Formas & Efeito atua no mercado de engenharia e arquitetura desde 1993, unindo tradição familiar e experiência técnica em cada projeto. Ao longo desses mais de 30 anos, construímos uma trajetória sólida, sempre acompanhando as transformações do setor sem perder nossa essência. #FormasEEfeito #EngenhariaEArquitetura #EmpresaFamiliar #TrajetoriaSolida #ConstruçãoCivil',
     media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
-    thumbnail_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
-    timestamp: '2026-10-06T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DeKtztMvNim/',
-    likes: 9,
+    media_url: '/images/instagram/2026-09-23-historia.webp',
+    thumbnail_url: '/images/instagram/2026-09-23-historia.webp',
+    timestamp: '2026-09-23T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DdpPxtaPATN/',
+    likes: 19,
     slides: []
   },
   {
@@ -42,14 +42,14 @@ export const INSTAGRAM_POSTS = [
     slides: []
   },
   {
-    id: 'DdpPxtaPATN',
-    caption: 'A Formas & Efeito atua no mercado de engenharia e arquitetura desde 1993, unindo tradição familiar e experiência técnica em cada projeto. Ao longo desses mais de 30 anos, construímos uma trajetória sólida, sempre acompanhando as transformações do setor sem perder nossa essência. #FormasEEfeito #EngenhariaEArquitetura #EmpresaFamiliar #TrajetoriaSolida #ConstruçãoCivil',
+    id: 'DeKtztMvNim',
+    caption: 'Neste Outubro Rosa, reforçamos a importância do autoexame, da mamografia e do acompanhamento médico regular. O diagnóstico precoce aumenta muito as chances de cura. Cuide de você e incentive quem você ama a fazer o mesmo. #OutubroRosa #CâncerDeMama #DiagnósticoPrecoce #Prevenção #FormasEEfeito',
     media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-09-23-historia.webp',
-    thumbnail_url: '/images/instagram/2026-09-23-historia.webp',
-    timestamp: '2026-09-23T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DdpPxtaPATN/',
-    likes: 19,
+    media_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
+    thumbnail_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
+    timestamp: '2026-10-06T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DeKtztMvNim/',
+    likes: 9,
     slides: []
   },
   {
