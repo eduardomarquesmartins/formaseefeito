@@ -1,202 +1,115 @@
-
 export const INSTAGRAM_CONFIG = {
-  handle: 'formasefeito',
+  handle: 'formaseefeito',
   displayName: 'FORMAS & EFEITO Arquitetura e Engenharia',
-  profileUrl: 'https://www.instagram.com/formasefeito',
+  profileUrl: 'https://www.instagram.com/formaseefeito/',
   avatarUrl: '/images/logo/logo-cropped.png',
-
-  apiUrl: 'https://iqeohgbheumlepnnosdf.supabase.co/functions/v1/instagram-feed',
-  postsLimit: 6
+  postsLimit: 9
 };
 
-export const INITIAL_INSTAGRAM_POSTS = [
+// Snapshot of the nine latest public posts checked on October 6, 2026.
+export const INSTAGRAM_POSTS = [
   {
-    id: 'post-uti-hmv',
-    caption: 'Fase final de entrega do CTI Adulto no Hospital Moinhos de Vento (3º Andar). Obra executada em hospital plenamente ativo, com rigoroso isolamento por pressão negativa e barreiras de contenção asséptica. Mais de 30 anos de precisão hospitalar. #ArquiteturaHospitalar #RDC50 #HospitalMoinhosDeVento #EngenhariaCivil #FormasEEfeito',
-    media_type: 'CAROUSEL_ALBUM',
-    media_url: '/images/obras/hmv-uti-adulto-01.jpg',
-    thumbnail_url: '/images/obras/hmv-uti-adulto-01.jpg',
-    timestamp: '2026-03-24T14:30:00Z',
-    permalink: 'https://www.instagram.com/formasefeito',
-    likes: 184,
-    slides: [
-      {
-        id: 'slide-uti-1',
-        media_url: '/images/obras/hmv-uti-adulto-01.jpg',
-        media_type: 'IMAGE',
-        title: 'Leitos de CTI com réguas medicinais integradas'
-      },
-      {
-        id: 'slide-uti-2',
-        media_url: '/images/obras/hmv-uti-corredor.jpg',
-        media_type: 'IMAGE',
-        title: 'Corredor asséptico com piso condutivo dissipativo'
-      },
-      {
-        id: 'slide-uti-3',
-        media_url: '/images/obras/hmv-uti-leito.jpg',
-        media_type: 'IMAGE',
-        title: 'Detalhe da iluminação circadiana e gases medicinais'
-      }
-    ]
-  },
-  {
-    id: 'post-hdp-oitavo',
-    caption: 'Superestrutura do 8º Andar no Hospital Divina Providência: 1.822,30 m² erguidos sobre a cobertura ativa do hospital para abrigar novo Bloco Cirúrgico, CTI e CME. Engenharia de altíssima complexidade e impacto zero nos leitos inferiores. #EngenhariaEstrutural #HospitalDivinaProvidencia #BlocoCirurgico #ObrasAtivas #Turnkey',
-    media_type: 'CAROUSEL_ALBUM',
-    media_url: '/images/obras/hdp-oitavo-andar.jpg',
-    thumbnail_url: '/images/obras/hdp-oitavo-andar.jpg',
-    timestamp: '2026-03-18T10:15:00Z',
-    permalink: 'https://www.instagram.com/formasefeito',
-    likes: 215,
-    slides: [
-      {
-        id: 'slide-hdp-1',
-        media_url: '/images/obras/hdp-oitavo-andar.jpg',
-        media_type: 'IMAGE',
-        title: 'Estrutura metálica leve e cobertura do 8º pavimento'
-      },
-      {
-        id: 'slide-hdp-2',
-        media_url: '/images/obras/hdp-reforco-fundacao-01.jpg',
-        media_type: 'IMAGE',
-        title: 'Reforço de fundação direta para absorção das novas cargas'
-      },
-      {
-        id: 'slide-hdp-3',
-        media_url: '/images/obras/hdp-reforco-fundacao-02.jpg',
-        media_type: 'IMAGE',
-        title: 'Rebaixamento de cota de assentamento e envelopamento'
-      }
-    ]
-  },
-  {
-    id: 'post-hmv-acelerador',
-    caption: 'Búnquer de Radioterapia e Acelerador Linear de alta energia no HMV. Paredes em concreto baritado de alta densidade e labirintos geométricos para atenuação de radiação ionizante (Norma CNEN NN 3.01). Rigor absoluto na execução. #Radioterapia #Oncologia #ProtecaoRadiologica #EngenhariaHospitalar #CNEN',
+    id: 'DeKtztMvNim',
+    caption: 'Neste Outubro Rosa, reforçamos a importância do autoexame, da mamografia e do acompanhamento médico regular. O diagnóstico precoce aumenta muito as chances de cura. Cuide de você e incentive quem você ama a fazer o mesmo. #OutubroRosa #CâncerDeMama #DiagnósticoPrecoce #Prevenção #FormasEEfeito',
     media_type: 'IMAGE',
-    media_url: '/images/obras/hmv-acelerador-linear.jpg',
-    thumbnail_url: '/images/obras/hmv-acelerador-linear.jpg',
-    timestamp: '2026-03-09T16:45:00Z',
-    permalink: 'https://www.instagram.com/formasefeito',
-    likes: 167
+    media_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
+    thumbnail_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
+    timestamp: '2026-10-06T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DeKtztMvNim/',
+    likes: 9,
+    slides: []
   },
   {
-    id: 'post-bom-conselho',
-    caption: 'Retrofit e preservação de patrimônio: Colégio Bom Conselho em Porto Alegre. Todo o miolo do edifício de quatro andares foi demolido internamente mantendo as paredes centenárias da fachada histórica de 1900, com acréscimo de um novo andar. #PatrimonioHistorico #Retrofit #EngenhariaCivil #PortoAlegre #FormasEEfeito',
-    media_type: 'CAROUSEL_ALBUM',
-    media_url: '/images/obras/colegio-bom-conselho-fachada.jpg',
-    thumbnail_url: '/images/obras/colegio-bom-conselho-fachada.jpg',
-    timestamp: '2026-02-27T11:20:00Z',
-    permalink: 'https://www.instagram.com/formasefeito',
-    likes: 298,
-    slides: [
-      {
-        id: 'slide-cbc-1',
-        media_url: '/images/obras/colegio-bom-conselho-fachada.jpg',
-        media_type: 'IMAGE',
-        title: 'Fachada original de 1900 restaurada e preservada'
-      },
-      {
-        id: 'slide-cbc-2',
-        media_url: '/images/obras/colegio-bom-conselho-obra.jpg',
-        media_type: 'IMAGE',
-        title: 'Cimbramento metálico externo durante a reconstrução'
-      }
-    ]
-  },
-  {
-    id: 'post-hmv-centro-cancer',
-    caption: 'Centro do Câncer e Ambulatório de Quimioterapia no Hospital Moinhos de Vento: ambientes humanizados, controle térmico e acústico avançado e postos de enfermagem estratégicos para atendimento oncológico integral. #Oncologia #HumanizacaoHospitalar #ArquiteturaDeSaude #HMV',
+    id: 'DdrzwLOPniL',
+    caption: 'Atuamos na construção e no gerenciamento de projetos e obras, do planejamento à entrega. Temos atuação especializada no setor hospitalar, área que exige atenção redobrada a normas técnicas, segurança e prazos, e é justamente nesse tipo de obra que construímos boa parte da nossa experiência. #GerenciamentoDeObras #ConstruçãoHospitalar #ProjetosDeEngenharia #ObrasComQualidade #InfraestruturaHospitalar',
     media_type: 'IMAGE',
-    media_url: '/images/obras/hmv-centro-cancer.jpg',
-    thumbnail_url: '/images/obras/hmv-centro-cancer.jpg',
-    timestamp: '2026-02-14T09:00:00Z',
-    permalink: 'https://www.instagram.com/formasefeito',
-    likes: 142
+    media_url: '/images/instagram/2026-09-24-atuacao.webp',
+    thumbnail_url: '/images/instagram/2026-09-24-atuacao.webp',
+    timestamp: '2026-09-24T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DdrzwLOPniL/',
+    likes: 27,
+    slides: []
   },
   {
-    id: 'post-hmv-auditorio',
-    caption: 'Espaços acadêmicos e científicos: Auditório e foyer do Serviço de Apoio Pedagógico (SAP) do HMV. Tratamento acústico de alta performance, climatização silenciosa e integração com a biblioteca médica. #ArquiteturaEducacional #SaudeEPesquisa #HospitalMoinhosDeVento #DesignFuncional',
-    media_type: 'CAROUSEL_ALBUM',
-    media_url: '/images/obras/hmv-auditorio.jpg',
-    thumbnail_url: '/images/obras/hmv-auditorio.jpg',
-    timestamp: '2026-01-28T17:10:00Z',
-    permalink: 'https://www.instagram.com/formasefeito',
-    likes: 153,
-    slides: [
-      {
-        id: 'slide-aud-1',
-        media_url: '/images/obras/hmv-auditorio.jpg',
-        media_type: 'IMAGE',
-        title: 'Auditório principal com acústica e projeção'
-      },
-      {
-        id: 'slide-aud-2',
-        media_url: '/images/obras/hmv-foyer.jpg',
-        media_type: 'IMAGE',
-        title: 'Foyer e recepção dos congressistas'
-      },
-      {
-        id: 'slide-aud-3',
-        media_url: '/images/obras/hmv-biblioteca.jpg',
-        media_type: 'IMAGE',
-        title: 'Biblioteca médica de apoio à pesquisa'
-      }
-    ]
+    id: 'Dd7QfKYPR61',
+    caption: 'Ao longo de mais de três décadas, acumulamos experiência técnica em diferentes tipos de obra, o que chamamos de know-how: o conhecimento prático que só se constrói com tempo e repertório. É essa bagagem que nos permite lidar com desafios específicos, como os do setor hospitalar, unindo tradição e atualização constante às novas exigências do mercado. #Autoridade #ExperiênciaTécnica #EngenhariaHospitalar #TradiçãoETecnologia #ConfiançaEmCadaObra',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-09-30-experiencia.webp',
+    thumbnail_url: '/images/instagram/2026-09-30-experiencia.webp',
+    timestamp: '2026-09-30T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/Dd7QfKYPR61/',
+    likes: 12,
+    slides: []
+  },
+  {
+    id: 'DdpPxtaPATN',
+    caption: 'A Formas & Efeito atua no mercado de engenharia e arquitetura desde 1993, unindo tradição familiar e experiência técnica em cada projeto. Ao longo desses mais de 30 anos, construímos uma trajetória sólida, sempre acompanhando as transformações do setor sem perder nossa essência. #FormasEEfeito #EngenhariaEArquitetura #EmpresaFamiliar #TrajetoriaSolida #ConstruçãoCivil',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-09-23-historia.webp',
+    thumbnail_url: '/images/instagram/2026-09-23-historia.webp',
+    timestamp: '2026-09-23T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DdpPxtaPATN/',
+    likes: 19,
+    slides: []
+  },
+  {
+    id: 'DcJ5EipPLnw',
+    post_format: 'REEL',
+    caption: 'Reforma em uma Sala de exames de Mamografia. Obra rápida, organizada, segura e com cliente final satisfeito! Entre em contato conosco! Somos especialistas em Reformas/Obras hospitalares #reformahospitalar #saúde #mamografia #engenhariaclinica #hospitalmoinhosdevento',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-08-17-mamografia.webp',
+    thumbnail_url: '/images/instagram/2026-08-17-mamografia.webp',
+    timestamp: '2026-08-17T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/reel/DcJ5EipPLnw/',
+    likes: 27,
+    slides: []
+  },
+  {
+    id: 'DbnvG9UkR0z',
+    caption: 'Entregamos mais uma obra referência: Segurança, conforto e tecnologia no novo Centro de Recuperação do Hospital Moinhos de Vento. 🏥✨\n\nA @formasefeito executou toda a reforma com as áreas adjacentes em pleno funcionamento, incluindo Bloco Cirúrgico e CTI 🚧, sem nenhum impacto no atendimento aos pacientes. Isso é engenharia hospitalar de verdade!\n\nUm espaço pensado para oferecer segurança, agilidade e conforto para pacientes e equipe, seguindo todas as normas e protocolos hospitalares.\n\nO que entregamos:\n🔹 Leitos individuais com esquadrias de alumínio e privacidade total\n🔹 Posto Assistencial central para suporte imediato\n🔹 Novos vestiários para equipe, com mais conforto e funcionalidade\n🔹 Sala de espera humanizada para familiares e acompanhantes.\n\nNa saúde, não dá pra parar!\nE na Formas e Efeito, a gente reforma com excelência junto aos nossos Clientes!\n\nQuer reformar seu ambiente de saúde? Entre em contato conosco!\n\n#formaseefeito #hospitalmoinhosdevento #reformahospitalar #arquiteturahospitalar #engenhariaclinica',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-08-04-centro-recuperacao.webp',
+    thumbnail_url: '/images/instagram/2026-08-04-centro-recuperacao.webp',
+    timestamp: '2026-08-04T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DbnvG9UkR0z/',
+    likes: 82,
+    slides: []
+  },
+  {
+    id: 'DbGrAqollGH',
+    caption: 'Mais uma reforma entregue com excelência!\n\nCom orgulho, concluímos a reforma da UTI Pediátrica do Hospital Moinhos de Vento. O projeto contemplou nova recepção e sala de espera, mais acolhedoras para famílias e acompanhantes, além da modernização completa dos leitos, com atualização de gases medicinais, infraestrutura elétrica e mobiliário clínico voltado à terapia intensiva pediátrica.\n\nAgradecemos a todas as equipes envolvidas nessa conquista! 👏\n\n#EngenhariaHospitalar #UTIPediátrica #HospitalMoinhosDeVento #Saúde',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-07-22-uti-pediatrica.webp',
+    thumbnail_url: '/images/instagram/2026-07-22-uti-pediatrica.webp',
+    timestamp: '2026-07-22T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DbGrAqollGH/',
+    likes: 114,
+    slides: []
+  },
+  {
+    id: 'DDeod3DxrHQ',
+    caption: 'Boas Festas!',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2024-12-12-boas-festas.webp',
+    thumbnail_url: '/images/instagram/2024-12-12-boas-festas.webp',
+    timestamp: '2024-12-12T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DDeod3DxrHQ/',
+    likes: 2,
+    slides: []
+  },
+  {
+    id: 'DABQr9tx3aB',
+    caption: '',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2024-09-17-publicacao.webp',
+    thumbnail_url: '/images/instagram/2024-09-17-publicacao.webp',
+    timestamp: '2024-09-17T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DABQr9tx3aB/',
+    likes: 16,
+    slides: []
   }
 ];
 
 export async function fetchInstagramFeed() {
-  const apiUrl = INSTAGRAM_CONFIG.apiUrl || (window.FORMAS_CONFIG && window.FORMAS_CONFIG.instagramApiUrl);
-
-  if (apiUrl) {
-    try {
-      const response = await fetch(apiUrl, {
-        method: 'GET',
-        headers: { 'Accept': 'application/json' }
-      });
-      if (response.ok) {
-        const payload = await response.json();
-        const rawItems = payload.data || (Array.isArray(payload) ? payload : []);
-        if (Array.isArray(rawItems) && rawItems.length > 0) {
-          const items = rawItems.slice(0, INSTAGRAM_CONFIG.postsLimit).map((item, idx) => {
-            const mediaType = item.media_type || item.mediaType || (item.mediaUrl?.endsWith('.mp4') ? 'VIDEO' : 'IMAGE');
-            const mediaUrl = item.media_url || item.mediaUrl || item.sizes?.large?.mediaUrl || item.sizes?.medium?.mediaUrl || '';
-            const thumbnailUrl = item.thumbnail_url || item.thumbnailUrl || mediaUrl;
-            const permalink = item.permalink || item.pr_url || INSTAGRAM_CONFIG.profileUrl;
-            const caption = item.caption || item.text || '';
-            const timestamp = item.timestamp || item.created_at || '';
-            const likes = item.likes || item.like_count || item.likes_count || null;
-
-            const rawChildren = item.slides || item.children || [];
-            const slides = Array.isArray(rawChildren) && rawChildren.length > 0
-              ? rawChildren.map((s, sIdx) => ({
-                  id: s.id || `slide-${idx}-${sIdx}`,
-                  media_url: s.media_url || s.mediaUrl || s.sizes?.large?.mediaUrl || '',
-                  media_type: s.media_type || s.mediaType || 'IMAGE',
-                  title: s.title || (s.caption ? s.caption.substring(0, 50) : '')
-                }))
-              : [];
-
-            return {
-              id: item.id || `post-${idx}`,
-              caption,
-              media_type: mediaType,
-              media_url: mediaUrl,
-              thumbnail_url: thumbnailUrl,
-              timestamp,
-              permalink,
-              likes,
-              slides
-            };
-          });
-          return items;
-        }
-      }
-    } catch (err) {
-      console.warn('Não foi possível conectar à API do Instagram, utilizando acervo local:', err);
-    }
-  }
-
-  return INITIAL_INSTAGRAM_POSTS;
+  return INSTAGRAM_POSTS.slice(0, INSTAGRAM_CONFIG.postsLimit);
 }

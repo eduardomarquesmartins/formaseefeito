@@ -488,7 +488,7 @@
       <section id="sobre" class="py-12 sm:py-16 lg:py-24 border-b border-neutral-200/60 bg-white" aria-label="Sobre a Empresa">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
 
             <div class="lg:col-span-5 relative pb-6 sm:pb-0">
               <div class="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg aspect-[16/10] bg-neutral-100">
@@ -732,42 +732,7 @@
             </div>
           </div>
 
-          <div id="instagram-feed-grid" data-maintenance="true">
-            <div class="rounded-2xl border border-neutral-200/90 bg-neutral-50/70 p-8 sm:p-12 text-center max-w-3xl mx-auto shadow-sm">
-              <div class="mx-auto flex items-center justify-center w-16 h-16 rounded-2xl bg-white border border-neutral-200 text-brand-orange shadow-sm mb-6">
-                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </div>
-
-              <h3 class="font-editorial text-xl sm:text-2xl text-neutral-900 mb-6">
-                Galeria do Instagram em Conexão
-              </h3>
-
-              <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a
-                  href="https://www.instagram.com/formasefeito"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="w-full sm:w-auto px-6 py-3 bg-neutral-900 hover:bg-neutral-800 text-white text-xs font-semibold rounded-full shadow-sm transition-all inline-flex items-center justify-center gap-2 group"
-                >
-                  <svg class="w-4 h-4 text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                  <span>Acessar Perfil Oficial @formasefeito</span>
-                  <span class="text-neutral-400 group-hover:translate-x-0.5 transition-transform">→</span>
-                </a>
-              </div>
-
-              <p class="text-[11px] text-neutral-400 mt-4">
-                Você pode acompanhar as publicações e stories diretamente no Instagram.
-              </p>
-            </div>
-          </div>
+          <div id="instagram-feed-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" aria-live="polite"></div>
 
         </div>
       </section>
@@ -1207,7 +1172,7 @@
           </svg>
         </button>
 
-        <div class="lg:w-[60%] bg-neutral-950 relative min-h-[240px] sm:min-h-[320px] lg:min-h-[520px] max-h-[45vh] lg:max-h-none flex items-center justify-center overflow-hidden">
+        <div class="lg:w-[60%] bg-[#f8f6f2] relative min-h-[240px] sm:min-h-[320px] lg:min-h-[520px] max-h-[45vh] lg:max-h-none flex items-center justify-center overflow-hidden">
           <div id="insta-slider-container" class="w-full h-full relative overflow-hidden flex items-center justify-center">
             <div id="insta-slider-track" class="insta-slider-track w-full h-full"></div>
           </div>

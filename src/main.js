@@ -41,7 +41,7 @@ function t(text) {
 import { PROJECTS, CATEGORIES } from './data/projectsData.js';
 import { ENGINEERING_CHALLENGES } from './data/challengesData.js';
 import { SERVICES } from './data/servicesData.js';
-import { fetchInstagramFeed, INSTAGRAM_CONFIG, INITIAL_INSTAGRAM_POSTS } from './data/instagramData.js';
+import { fetchInstagramFeed, INSTAGRAM_CONFIG } from './data/instagramData.js';
 
 const HERO_PROJECTS = [
   {
@@ -1589,7 +1589,7 @@ function initModalListeners() {
 
 function initInstagramFeed() {
   const gridContainer = document.getElementById('instagram-feed-grid');
-  if (!gridContainer || gridContainer.dataset.maintenance === 'true') return;
+  if (!gridContainer) return;
 
   const modal = document.getElementById('instagram-lightbox-modal');
   const modalCloseBtn = document.getElementById('insta-modal-close-btn');
@@ -1602,21 +1602,30 @@ function initInstagramFeed() {
   const dateEl = document.getElementById('insta-modal-date');
   const likesEl = document.getElementById('insta-modal-likes');
   const permalinkEl = document.getElementById('insta-modal-permalink');
-
-  const bindExistingCards = (postList) => {
-    gridContainer.querySelectorAll('.insta-card').forEach(card => {
-      const postId = card.dataset.postId;
-      const found = postList.find(p => p.id === postId);
-      if (found) {
-        card.onclick = () => openModal(found);
-      }
-    });
+  const escapeHtml = (value = '') => String(value).replace(/[&<>"']/g, char => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[char]);
+  const safeMediaUrl = (value = '') => {
+    try {
+      const url = new URL(value, window.location.origin);
+      return url.protocol === 'https:' || url.origin === window.location.origin ? url.href : '';
+    } catch {
+      return '';
+    }
+  };
+  const safeInstagramPermalink = (value = '') => {
+    try {
+      const url = new URL(value);
+      return url.protocol === 'https:' && /(^|\.)instagram\.com$/i.test(url.hostname)
+        ? url.href
+        : INSTAGRAM_CONFIG.profileUrl;
+    } catch {
+      return INSTAGRAM_CONFIG.profileUrl;
+    }
   };
 
-  bindExistingCards(INITIAL_INSTAGRAM_POSTS);
-
   if (gridContainer.children.length === 0) {
-    gridContainer.innerHTML = Array.from({ length: 6 }).map(() => `
+    gridContainer.innerHTML = Array.from({ length: INSTAGRAM_CONFIG.postsLimit }).map(() => `
       <div class="border border-neutral-200 rounded-xl overflow-hidden bg-white shadow-sm">
         <div class="aspect-square shimmer w-full"></div>
         <div class="p-5 space-y-3">
@@ -1677,13 +1686,13 @@ function initInstagramFeed() {
     totalSlides = slides.length;
 
     sliderTrack.innerHTML = slides.map((s, idx) => `
-      <div class="w-full h-full shrink-0 flex items-center justify-center bg-black/95 relative p-2">
+      <div class="w-full h-full shrink-0 flex items-center justify-center bg-[#f8f6f2] relative">
         ${s.media_type === 'VIDEO' ? `
-          <video src="${s.media_url}" controls playsinline preload="metadata" poster="${s.thumbnail_url || ''}" class="max-w-full max-h-[85vh] object-contain">
+          <video src="${escapeHtml(safeMediaUrl(s.media_url))}" controls playsinline preload="metadata" poster="${escapeHtml(safeMediaUrl(s.thumbnail_url || ''))}" class="w-full h-full object-contain">
             Seu navegador não suporta reprodução de vídeos.
           </video>
         ` : `
-          <img src="${s.media_url}" alt="${post.caption ? post.caption.substring(0, 50) : `Slide ${idx + 1}`}" class="max-w-full max-h-[85vh] object-contain select-none shadow-lg" />
+          <img src="${escapeHtml(safeMediaUrl(s.media_url))}" alt="${escapeHtml(post.caption ? post.caption.substring(0, 50) : `Slide ${idx + 1}`)}" class="w-full h-full object-contain select-none" />
         `}
       </div>
     `).join('');
@@ -1717,10 +1726,12 @@ function initInstagramFeed() {
       dateEl.textContent = d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
     }
     if (likesEl) {
-      likesEl.innerHTML = `❤️ ${post.likes || 120} curtidas`;
+      const likes = Number(post.likes);
+      likesEl.textContent = Number.isFinite(likes) && likes > 0 ? `❤️ ${likes} curtidas` : '';
+      likesEl.classList.toggle('hidden', !Number.isFinite(likes) || likes <= 0);
     }
     if (permalinkEl) {
-      permalinkEl.href = post.permalink || INSTAGRAM_CONFIG.profileUrl;
+      permalinkEl.href = safeInstagramPermalink(post.permalink);
     }
 
     updateSlidePosition();
@@ -1782,9 +1793,12 @@ function initInstagramFeed() {
 
   fetchInstagramFeed().then(posts => {
     if (!posts || posts.length === 0) {
+      const message = window.LANGUAGE === 'en'
+        ? 'Instagram posts are unavailable right now. Visit the profile'
+        : 'Não foi possível carregar as publicações agora. Acesse o perfil';
       gridContainer.innerHTML = `
         <div class="col-span-full p-8 text-center bg-white rounded-xl border border-neutral-200 text-neutral-500 text-xs">
-          Acompanhe nossos registros diretamente no perfil <a href="${INSTAGRAM_CONFIG.profileUrl}" target="_blank" class="text-brand-orange font-semibold hover:underline">@${INSTAGRAM_CONFIG.handle}</a>.
+          ${message} <a href="${INSTAGRAM_CONFIG.profileUrl}" target="_blank" rel="noopener noreferrer" class="text-brand-orange font-semibold hover:underline">@${INSTAGRAM_CONFIG.handle}</a>.
         </div>
       `;
       return;
@@ -1793,19 +1807,23 @@ function initInstagramFeed() {
     gridContainer.innerHTML = '';
     posts.forEach(post => {
       const card = document.createElement('article');
-      card.className = 'insta-card group border border-neutral-200 hover:border-neutral-300 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between cursor-pointer';
+    card.className = 'insta-card group border border-neutral-200 hover:border-neutral-300 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between cursor-pointer';
 
-      const isAlbum = post.media_type === 'CAROUSEL_ALBUM' || (post.slides && post.slides.length > 1);
-      const isVideo = post.media_type === 'VIDEO';
+      const isAlbum = post.media_type === 'CAROUSEL_ALBUM' || post.post_format === 'CAROUSEL' || (post.slides && post.slides.length > 1);
+      const isVideo = post.media_type === 'VIDEO' || post.post_format === 'REEL';
       const formattedDate = post.timestamp
         ? new Date(post.timestamp).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })
         : 'Recente';
+      const thumbnailUrl = safeMediaUrl(post.thumbnail_url || post.media_url);
+      const likes = Number(post.likes);
+
+      if (!thumbnailUrl) return;
 
       card.innerHTML = `
         <div class="relative aspect-square overflow-hidden bg-neutral-100">
           <img
-            src="${post.thumbnail_url || post.media_url}"
-            alt="${post.caption ? post.caption.substring(0, 60) : 'Publicação Instagram'}"
+            src="${escapeHtml(thumbnailUrl)}"
+            alt="${escapeHtml(post.caption ? post.caption.substring(0, 60) : 'Publicação Instagram')}"
             class="insta-card-img w-full h-full object-cover"
             loading="lazy"
           />
@@ -1827,7 +1845,7 @@ function initInstagramFeed() {
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
                   <rect x="7" y="7" width="10" height="10" rx="1" ry="1"/>
                 </svg>
-                <span>${post.slides ? post.slides.length : 'Álbum'}</span>
+                <span>${post.slides && post.slides.length > 1 ? post.slides.length : 'Álbum'}</span>
               </span>
             ` : isVideo ? `
               <span class="bg-black/75 backdrop-blur-sm px-2 py-1 rounded-full text-white font-medium flex items-center gap-1 shadow-sm">
@@ -1854,10 +1872,10 @@ function initInstagramFeed() {
           <div class="space-y-1.5">
             <div class="flex items-center justify-between text-[11px] text-neutral-400">
               <span>${formattedDate}</span>
-              <span class="text-neutral-500 font-medium">❤️ ${post.likes || 120}</span>
+              ${Number.isFinite(likes) && likes > 0 ? `<span class="text-neutral-500 font-medium">❤️ ${likes}</span>` : ''}
             </div>
             <p class="text-xs text-neutral-700 font-light leading-relaxed line-clamp-3">
-              ${post.caption || ''}
+              ${escapeHtml(post.caption || '')}
             </p>
           </div>
 
