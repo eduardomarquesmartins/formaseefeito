@@ -207,6 +207,7 @@ function safeInit(name, fn) {
 
 function initApp() {
   safeInit('initHeader', initHeader);
+  safeInit('initHeroBackgroundCarousel', initHeroBackgroundCarousel);
   safeInit('initHeroTetris', initHeroTetris);
   safeInit('initHospitalSpecialties', initHospitalSpecialties);
   safeInit('initEngineeringChallenges', initEngineeringChallenges);
@@ -215,6 +216,48 @@ function initApp() {
   safeInit('initExpertiseAccordion', initExpertiseAccordion);
   safeInit('initContactForm', initContactForm);
   safeInit('initScrollEffects', initScrollEffects);
+}
+
+function initHeroBackgroundCarousel() {
+  const slideGroups = ['hero-background-carousel']
+    .map(id => document.getElementById(id))
+    .filter(Boolean)
+    .map(carousel => Array.from(carousel.querySelectorAll('.hero-background-slide, .header-background-slide')));
+  if (!slideGroups.length || slideGroups.some(slides => slides.length < 2)) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let activeIndex = Math.max(0, slideGroups[0].findIndex(slide => slide.classList.contains('is-active')));
+  let timer = null;
+
+  const setActiveSlide = nextIndex => {
+    slideGroups.forEach(slides => {
+      slides.forEach((slide, index) => slide.classList.toggle('is-active', index === nextIndex));
+    });
+    activeIndex = nextIndex;
+  };
+
+  const stop = () => {
+    if (timer !== null) {
+      window.clearInterval(timer);
+      timer = null;
+    }
+  };
+
+  const start = () => {
+    if (timer !== null || document.hidden || reducedMotion.matches) return;
+    timer = window.setInterval(() => {
+      setActiveSlide((activeIndex + 1) % slideGroups[0].length);
+    }, 7600);
+  };
+
+  const syncPlayback = () => {
+    if (document.hidden || reducedMotion.matches) stop();
+    else start();
+  };
+
+  document.addEventListener('visibilitychange', syncPlayback);
+  reducedMotion.addEventListener?.('change', syncPlayback);
+  syncPlayback();
 }
 
 if (document.readyState === 'loading') {
@@ -340,7 +383,7 @@ function initHeroTetris() {
     bgBuildings = [];
     const isMobile = width < 640;
     const isTablet = width < 1024;
-    const baseY = height * 0.98;
+    const baseY = height - 1;
 
     const bgStartX = isMobile ? width * 0.32 : width * 0.46;
     const bgStep = isMobile ? 50 : 85;
@@ -572,7 +615,7 @@ function initHeroTetris() {
       const floorH = b.targetH / b.floors;
       const targetBuildingH = floorH * b.builtFloors;
       
-      const baseY = height * 0.98;
+      const baseY = height - 1;
       const topY = baseY - targetBuildingH;
       
       scanLines.push({
@@ -1065,7 +1108,7 @@ function initHeroTetris() {
   function render() {
     ctx.clearRect(0, 0, width, height);
 
-    const baseY = height * 0.98;
+    const baseY = height - 1;
 
     drawBackgroundSkyline(baseY);
     drawDraftingGrid(baseY);

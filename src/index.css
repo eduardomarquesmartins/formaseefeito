@@ -7,6 +7,37 @@
   --brand-black: #111827;
 }
 
+.hero-background-slide {
+  opacity: 0;
+  transform: scale(1.04);
+  filter: saturate(0.82) contrast(0.98);
+  transition: opacity 1.6s ease-in-out, transform 8s ease-out;
+  will-change: opacity, transform;
+}
+
+.hero-background-slide.is-active {
+  opacity: 0.58;
+  transform: scale(1);
+}
+
+/* Teste visual temporário: ocultar os prédios sem remover sua animação. */
+#hero-tetris-canvas {
+  visibility: hidden;
+}
+
+@media (max-width: 639px) {
+  .hero-background-slide.is-active {
+    opacity: 0.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-background-slide {
+    transition: none;
+    transform: none;
+  }
+}
+
 @layer base {
   html {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
