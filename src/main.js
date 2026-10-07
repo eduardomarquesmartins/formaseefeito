@@ -226,6 +226,7 @@ function initHeroBackgroundCarousel() {
   if (!slideGroups.length || slideGroups.some(slides => slides.length < 2)) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const mobileViewport = window.matchMedia('(max-width: 639px)');
   let activeIndex = Math.max(0, slideGroups[0].findIndex(slide => slide.classList.contains('is-active')));
   let timer = null;
 
@@ -247,7 +248,7 @@ function initHeroBackgroundCarousel() {
     if (timer !== null || document.hidden || reducedMotion.matches) return;
     timer = window.setInterval(() => {
       setActiveSlide((activeIndex + 1) % slideGroups[0].length);
-    }, 7600);
+    }, mobileViewport.matches ? 5200 : 7600);
   };
 
   const syncPlayback = () => {
@@ -257,6 +258,10 @@ function initHeroBackgroundCarousel() {
 
   document.addEventListener('visibilitychange', syncPlayback);
   reducedMotion.addEventListener?.('change', syncPlayback);
+  mobileViewport.addEventListener?.('change', () => {
+    stop();
+    start();
+  });
   syncPlayback();
 }
 
