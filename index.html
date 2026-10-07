@@ -228,20 +228,44 @@
 
       <section id="hero" class="relative min-h-[560px] sm:min-h-[740px] lg:min-h-[820px] flex items-center overflow-hidden bg-[#faf7f2] text-neutral-900" aria-label="Apresentação - Engenharia de Precisão e Arquitetura">
         <div id="hero-background-carousel" class="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <img src="/images/hero/slides/hmv-uti-adulto.webp" alt="" class="hero-background-slide is-active absolute inset-0 w-full h-full object-cover" fetchpriority="high" decoding="async" />
-          <img src="/images/hero/slides/auditorio-institucional.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
-          <img src="/images/hero/slides/hmv-uti-corredor.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
-          <img src="/images/hero/slides/hmv-foyer.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
-          <img src="/images/hero/slides/hmv-centro-cancer.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
-          <img src="/images/hero/slides/hmv-laboratorio-patologia.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
-          <img src="/images/hero/slides/hmd-bloco-cirurgico.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
-          <img src="/images/hero/slides/colegio-bom-conselho.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/hmv-uti-adulto.webp" />
+            <img src="/images/hero/slides/hmv-uti-adulto.webp" alt="" class="hero-background-slide is-active absolute inset-0 w-full h-full object-cover" fetchpriority="high" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/auditorio-institucional.webp" />
+            <img src="/images/hero/slides/auditorio-institucional.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/hmv-uti-corredor.webp" />
+            <img src="/images/hero/slides/hmv-uti-corredor.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/hmv-foyer.webp" />
+            <img src="/images/hero/slides/hmv-foyer.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/hmv-centro-cancer.webp" />
+            <img src="/images/hero/slides/hmv-centro-cancer.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/hmv-laboratorio-patologia.webp" />
+            <img src="/images/hero/slides/hmv-laboratorio-patologia.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/hmd-bloco-cirurgico.webp" />
+            <img src="/images/hero/slides/hmd-bloco-cirurgico.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          </picture>
+          <picture class="absolute inset-0 block">
+            <source media="(max-width: 639px)" srcset="/images/hero/slides/mobile/colegio-bom-conselho.webp" />
+            <img src="/images/hero/slides/colegio-bom-conselho.webp" alt="" class="hero-background-slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async" />
+          </picture>
         </div>
         <div class="absolute inset-0 z-[1] bg-[#faf7f2]/5 pointer-events-none"></div>
         <canvas id="hero-tetris-canvas" class="absolute inset-0 w-full h-full block z-10" aria-hidden="true"></canvas>
 
-        <div class="absolute inset-0 bg-gradient-to-r from-[#faf7f2] via-[#faf7f2]/80 to-transparent pointer-events-none z-20 w-3/4 sm:w-2/3 lg:w-3/5"></div>
-        <div class="absolute inset-x-0 bottom-0 h-[64%] sm:h-36 lg:h-44 bg-gradient-to-b from-transparent via-[#faf7f2]/75 to-[#faf7f2] pointer-events-none z-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#faf7f2]/85 via-[#faf7f2]/45 to-transparent pointer-events-none z-20 w-full sm:from-[#faf7f2] sm:via-[#faf7f2]/80 sm:w-2/3 lg:w-3/5"></div>
+        <div class="absolute inset-x-0 bottom-0 h-16 sm:h-36 lg:h-44 bg-gradient-to-b from-transparent via-[#faf7f2]/75 to-[#faf7f2] pointer-events-none z-20"></div>
 
         <div class="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 sm:py-20 lg:py-24">
           <div class="max-w-3xl flex flex-col justify-center text-left">

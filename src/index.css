@@ -27,7 +27,7 @@
 
 @keyframes hero-background-zoom-mobile {
   from { transform: scale(1); }
-  to { transform: scale(1.06); }
+  to { transform: scale(1.03); }
 }
 
 .hero-background-slide.is-active {
@@ -41,13 +41,13 @@
 
 @media (max-width: 639px) {
   #hero-background-carousel {
-    height: 45%;
+    height: 100%;
     animation-name: hero-background-zoom-mobile;
     animation-duration: 7s;
   }
 
   .hero-background-slide.is-active {
-    opacity: 0.4;
+    opacity: 0.62;
   }
 }
 
