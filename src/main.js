@@ -277,7 +277,7 @@ function initHeroBackgroundCarousel() {
     if (timer !== null || document.hidden || reducedMotion.matches) return;
     timer = window.setInterval(() => {
       setActiveSlide((activeIndex + 1) % slideGroups[0].length);
-    }, mobileViewport.matches ? 5200 : 7600);
+    }, mobileViewport.matches ? 4000 : 6000);
   };
 
   const syncPlayback = () => {
