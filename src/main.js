@@ -229,12 +229,41 @@ function initHeroBackgroundCarousel() {
   const mobileViewport = window.matchMedia('(max-width: 639px)');
   let activeIndex = Math.max(0, slideGroups[0].findIndex(slide => slide.classList.contains('is-active')));
   let timer = null;
+  let isChangingSlide = false;
+  const unavailableSlides = new Set();
 
-  const setActiveSlide = nextIndex => {
-    slideGroups.forEach(slides => {
-      slides.forEach((slide, index) => slide.classList.toggle('is-active', index === nextIndex));
-    });
-    activeIndex = nextIndex;
+  const setActiveSlide = async nextIndex => {
+    if (isChangingSlide) return;
+    isChangingSlide = true;
+
+    try {
+      const slideCount = slideGroups[0].length;
+      for (let offset = 0; offset < slideCount; offset++) {
+        const candidateIndex = (nextIndex + offset) % slideCount;
+        if (candidateIndex === activeIndex || unavailableSlides.has(candidateIndex)) continue;
+
+        const candidateSlides = slideGroups.map(slides => slides[candidateIndex]);
+        try {
+          await Promise.all(candidateSlides.map(slide => slide.decode?.()));
+        } catch {
+          unavailableSlides.add(candidateIndex);
+          continue;
+        }
+
+        if (candidateSlides.some(slide => !slide.naturalWidth)) {
+          unavailableSlides.add(candidateIndex);
+          continue;
+        }
+
+        slideGroups.forEach(slides => {
+          slides.forEach((slide, index) => slide.classList.toggle('is-active', index === candidateIndex));
+        });
+        activeIndex = candidateIndex;
+        return;
+      }
+    } finally {
+      isChangingSlide = false;
+    }
   };
 
   const stop = () => {

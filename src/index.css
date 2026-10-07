@@ -16,18 +16,18 @@
 
 #hero-background-carousel {
   transform-origin: center;
-  animation: hero-background-zoom 24s ease-in-out infinite alternate;
+  animation: hero-background-zoom 12s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 @keyframes hero-background-zoom {
   from { transform: scale(1); }
-  to { transform: scale(1.04); }
+  to { transform: scale(1.08); }
 }
 
 @keyframes hero-background-zoom-mobile {
   from { transform: scale(1); }
-  to { transform: scale(1.02); }
+  to { transform: scale(1.06); }
 }
 
 .hero-background-slide.is-active {
@@ -43,7 +43,7 @@
   #hero-background-carousel {
     height: 45%;
     animation-name: hero-background-zoom-mobile;
-    animation-duration: 16s;
+    animation-duration: 7s;
   }
 
   .hero-background-slide.is-active {
