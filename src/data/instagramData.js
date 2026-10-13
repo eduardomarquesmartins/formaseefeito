@@ -1,33 +1,21 @@
 export const INSTAGRAM_CONFIG = {
   handle: 'formaseefeito',
-  displayName: 'FORMAS & EFEITO Arquitetura e Engenharia',
+  displayName: 'FORMAS & EFEITO Engenharia e Gerenciamento',
   profileUrl: 'https://www.instagram.com/formaseefeito/',
   avatarUrl: '/images/logo/logo-cropped.png',
-  postsLimit: 9
+  postsLimit: 6
 };
 
-// Snapshot of the nine latest public posts checked on October 6, 2026.
 export const INSTAGRAM_POSTS = [
   {
-    id: 'DdpPxtaPATN',
-    caption: 'A Formas & Efeito atua no mercado de engenharia e arquitetura desde 1993, unindo tradição familiar e experiência técnica em cada projeto. Ao longo desses mais de 30 anos, construímos uma trajetória sólida, sempre acompanhando as transformações do setor sem perder nossa essência. #FormasEEfeito #EngenhariaEArquitetura #EmpresaFamiliar #TrajetoriaSolida #ConstruçãoCivil',
+    id: 'DeKtztMvNim',
+    caption: 'Neste Outubro Rosa, reforçamos a importância do autoexame, da mamografia e do acompanhamento médico regular. O diagnóstico precoce aumenta muito as chances de cura. Cuide de você e incentive quem você ama a fazer o mesmo. #OutubroRosa #CâncerDeMama #DiagnósticoPrecoce #Prevenção #FormasEEfeito',
     media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-09-23-historia.webp',
-    thumbnail_url: '/images/instagram/2026-09-23-historia.webp',
-    timestamp: '2026-09-23T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DdpPxtaPATN/',
-    likes: 19,
-    slides: []
-  },
-  {
-    id: 'DdrzwLOPniL',
-    caption: 'Atuamos na construção e no gerenciamento de projetos e obras, do planejamento à entrega. Temos atuação especializada no setor hospitalar, área que exige atenção redobrada a normas técnicas, segurança e prazos, e é justamente nesse tipo de obra que construímos boa parte da nossa experiência. #GerenciamentoDeObras #ConstruçãoHospitalar #ProjetosDeEngenharia #ObrasComQualidade #InfraestruturaHospitalar',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-09-24-atuacao.webp',
-    thumbnail_url: '/images/instagram/2026-09-24-atuacao.webp',
-    timestamp: '2026-09-24T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DdrzwLOPniL/',
-    likes: 27,
+    media_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
+    thumbnail_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
+    timestamp: '2026-10-06T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DeKtztMvNim/',
+    likes: 9,
     slides: []
   },
   {
@@ -42,14 +30,25 @@ export const INSTAGRAM_POSTS = [
     slides: []
   },
   {
-    id: 'DeKtztMvNim',
-    caption: 'Neste Outubro Rosa, reforçamos a importância do autoexame, da mamografia e do acompanhamento médico regular. O diagnóstico precoce aumenta muito as chances de cura. Cuide de você e incentive quem você ama a fazer o mesmo. #OutubroRosa #CâncerDeMama #DiagnósticoPrecoce #Prevenção #FormasEEfeito',
+    id: 'DdrzwLOPniL',
+    caption: 'Atuamos na construção e no gerenciamento de projetos e obras, do planejamento à entrega. Temos atuação especializada no setor hospitalar, área que exige atenção redobrada a normas técnicas, segurança e prazos, e é justamente nesse tipo de obra que construímos boa parte da nossa experiência. #GerenciamentoDeObras #ConstruçãoHospitalar #ProjetosDeEngenharia #ObrasComQualidade #InfraestruturaHospitalar',
     media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
-    thumbnail_url: '/images/instagram/2026-10-06-outubro-rosa.webp',
-    timestamp: '2026-10-06T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DeKtztMvNim/',
-    likes: 9,
+    media_url: '/images/instagram/2026-09-24-atuacao.webp',
+    thumbnail_url: '/images/instagram/2026-09-24-atuacao.webp',
+    timestamp: '2026-09-24T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DdrzwLOPniL/',
+    likes: 27,
+    slides: []
+  },
+  {
+    id: 'DdpPxtaPATN',
+    caption: 'A Formas & Efeito atua no mercado de engenharia desde 1993, unindo tradição familiar e experiência técnica em cada projeto. Ao longo desses mais de 30 anos, construímos uma trajetória sólida, sempre acompanhando as transformações do setor sem perder nossa essência. #FormasEEfeito #Engenharia #EmpresaFamiliar #TrajetoriaSolida #ConstruçãoCivil',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-09-23-historia.webp',
+    thumbnail_url: '/images/instagram/2026-09-23-historia.webp',
+    timestamp: '2026-09-23T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DdpPxtaPATN/',
+    likes: 19,
     slides: []
   },
   {
@@ -73,39 +72,6 @@ export const INSTAGRAM_POSTS = [
     timestamp: '2026-08-04T12:00:00-03:00',
     permalink: 'https://www.instagram.com/p/DbnvG9UkR0z/',
     likes: 82,
-    slides: []
-  },
-  {
-    id: 'DbGrAqollGH',
-    caption: 'Mais uma reforma entregue com excelência!\n\nCom orgulho, concluímos a reforma da UTI Pediátrica do Hospital Moinhos de Vento. O projeto contemplou nova recepção e sala de espera, mais acolhedoras para famílias e acompanhantes, além da modernização completa dos leitos, com atualização de gases medicinais, infraestrutura elétrica e mobiliário clínico voltado à terapia intensiva pediátrica.\n\nAgradecemos a todas as equipes envolvidas nessa conquista! 👏\n\n#EngenhariaHospitalar #UTIPediátrica #HospitalMoinhosDeVento #Saúde',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-07-22-uti-pediatrica.webp',
-    thumbnail_url: '/images/instagram/2026-07-22-uti-pediatrica.webp',
-    timestamp: '2026-07-22T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DbGrAqollGH/',
-    likes: 114,
-    slides: []
-  },
-  {
-    id: 'DDeod3DxrHQ',
-    caption: 'Boas Festas!',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2024-12-12-boas-festas.webp',
-    thumbnail_url: '/images/instagram/2024-12-12-boas-festas.webp',
-    timestamp: '2024-12-12T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DDeod3DxrHQ/',
-    likes: 2,
-    slides: []
-  },
-  {
-    id: 'DABQr9tx3aB',
-    caption: '',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2024-09-17-publicacao.webp',
-    thumbnail_url: '/images/instagram/2024-09-17-publicacao.webp',
-    timestamp: '2024-09-17T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DABQr9tx3aB/',
-    likes: 16,
     slides: []
   }
 ];

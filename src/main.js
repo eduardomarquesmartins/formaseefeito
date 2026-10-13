@@ -100,15 +100,15 @@ const HERO_PROJECTS = [
     summary: 'Acabamentos nobres, conforto acústico e iluminação acolhedora para o bem-estar e recuperação dos pacientes.'
   },
   {
-    id: 'hmd-becker',
-    shortName: '8 Andares — Dom Becker',
-    title: 'Ampliação Geral — Novo Bloco Hospitalar',
-    client: 'Hospital Dom João Becker',
-    location: 'Gravataí, RS',
-    tag: 'Complexo de Saúde',
+    id: 'hmd-acesso',
+    shortName: 'Acesso — Mãe de Deus',
+    title: 'Modernização do Acesso Principal & Recepção',
+    client: 'Hospital Mãe de Deus',
+    location: 'Porto Alegre, RS',
+    tag: 'Engenharia Hospitalar',
     image: '/images/obras/hmd-acesso-principal.jpg',
-    stat: 'Hospital Dom João Becker • Novo prédio de 8 andares com emergência e cirurgias',
-    summary: 'Prédio completo com emergência, hemodinâmica, centro cirúrgico e UTIs para atender a comunidade regional.'
+    stat: 'Hospital Mãe de Deus • Modernização de acessos e fluxos assistenciais',
+    summary: 'Adequação dos fluxos de recepção, acessibilidade e circulação de pacientes e emergência em hospital em operação.'
   },
   {
     id: 'puc-onco',
