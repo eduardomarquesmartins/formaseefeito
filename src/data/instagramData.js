@@ -19,17 +19,6 @@ export const INSTAGRAM_POSTS = [
     slides: []
   },
   {
-    id: 'Dd7QfKYPR61',
-    caption: 'Ao longo de mais de três décadas, acumulamos experiência técnica em diferentes tipos de obra, o que chamamos de know-how: o conhecimento prático que só se constrói com tempo e repertório. É essa bagagem que nos permite lidar com desafios específicos, como os do setor hospitalar, unindo tradição e atualização constante às novas exigências do mercado. #Autoridade #ExperiênciaTécnica #EngenhariaHospitalar #TradiçãoETecnologia #ConfiançaEmCadaObra',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-09-30-experiencia.webp',
-    thumbnail_url: '/images/instagram/2026-09-30-experiencia.webp',
-    timestamp: '2026-09-30T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/Dd7QfKYPR61/',
-    likes: 12,
-    slides: []
-  },
-  {
     id: 'DdrzwLOPniL',
     caption: 'Atuamos na construção e no gerenciamento de projetos e obras, do planejamento à entrega. Temos atuação especializada no setor hospitalar, área que exige atenção redobrada a normas técnicas, segurança e prazos, e é justamente nesse tipo de obra que construímos boa parte da nossa experiência. #GerenciamentoDeObras #ConstruçãoHospitalar #ProjetosDeEngenharia #ObrasComQualidade #InfraestruturaHospitalar',
     media_type: 'IMAGE',
@@ -38,6 +27,17 @@ export const INSTAGRAM_POSTS = [
     timestamp: '2026-09-24T12:00:00-03:00',
     permalink: 'https://www.instagram.com/p/DdrzwLOPniL/',
     likes: 27,
+    slides: []
+  },
+  {
+    id: 'Dd7QfKYPR61',
+    caption: 'Ao longo de mais de três décadas, acumulamos experiência técnica em diferentes tipos de obra, o que chamamos de know-how: o conhecimento prático que só se constrói com tempo e repertório. É essa bagagem que nos permite lidar com desafios específicos, como os do setor hospitalar, unindo tradição e atualização constante às novas exigências do mercado. #Autoridade #ExperiênciaTécnica #EngenhariaHospitalar #TradiçãoETecnologia #ConfiançaEmCadaObra',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-09-30-experiencia.webp',
+    thumbnail_url: '/images/instagram/2026-09-30-experiencia.webp',
+    timestamp: '2026-09-30T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/Dd7QfKYPR61/',
+    likes: 12,
     slides: []
   },
   {
