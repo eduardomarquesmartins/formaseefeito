@@ -66,7 +66,7 @@ function buildEmailHtml(data: {
           <tr>
             <td style="background-color: #0c1a24; padding: 32px 28px; text-align: left;">
               <span style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #ea580c; font-weight: 700; display: block; margin-bottom: 6px;">
-                FORMAS &amp; EFEITO ARQUITETURA E ENGENHARIA
+                FORMAS &amp; EFEITO
               </span>
               <h1 style="color: #ffffff; font-size: 22px; font-weight: 700; margin: 0; line-height: 1.3;">
                 Nova Solicitação de Projeto / Contato

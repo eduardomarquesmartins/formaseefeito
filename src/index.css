@@ -34,7 +34,7 @@
   opacity: 0.58;
 }
 
-/* Teste visual temporário: ocultar os prédios sem remover sua animação. */
+
 #hero-tetris-canvas {
   visibility: hidden;
 }
