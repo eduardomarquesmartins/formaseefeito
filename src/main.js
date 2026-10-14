@@ -1,19 +1,152 @@
 
 const TRANSLATIONS = {
+  'Todas as Obras': 'All Projects',
+  'Hospitalar & Saúde': 'Hospital & Healthcare',
+  'Educacional & Institucional': 'Educational & Institutional',
+  'Engenharia & Retrofit': 'Engineering & Retrofit',
+
   'Centro de Terapia Intensiva Adulto (3º Andar)': 'Adult Intensive Care Unit (3rd Floor)',
   'Hospital Moinhos de Vento • CTI executado sem interromper a rotina assistencial': 'Moinhos de Vento Hospital • ICU executed without interrupting care routines',
   'Leitos de isolamento individuais, pressão controlada e filtragem de ar de alta eficiência para proteção total dos pacientes.': 'Individual isolation beds, controlled pressure and high efficiency air filtration for total patient protection.',
   'Saúde Crítica • Cuidado Máximo': 'Critical Healthcare • Maximum Care',
 
-  'Rebaixamento de Sapatas Diretas — Bloco A': 'Direct Footing Lowering — Block A',
-  'Hospital Divina Providência • Engenharia geotécnica e estrutural avançada': 'Divina Providência Hospital • Advanced geotechnical and structural engineering',
-  'Reforço de fundações executado em subsolo confinado, garantindo a estabilidade da estrutura principal sem impactos na operação hospitalar.': 'Foundation reinforcement executed in a confined basement, ensuring stability of the main structure without impacting hospital operations.',
-  'Fundação Profunda • Risco Zero': 'Deep Foundation • Zero Risk',
+  'Construção do 8º Andar — Bloco Cirúrgico, CME & CTI': '8th Floor Construction — Surgical Block, CME & ICU',
+  'Construção do 8º Andar em Hospital Ativo': '8th Floor Construction in Active Hospital',
+  'Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital': 'Hospital Divina Providência • 1,822 m² built without closing the hospital',
+  'Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.': 'Construction of a new floor covering 90% of the active hospital, maintaining all surgeries and patient safety.',
+  'Superestrutura • 1.822 m²': 'Superstructure • 1,822 m²',
 
-  'Arquitetura • Conforto': 'Architecture • Comfort',
-  'Hospital Mãe de Deus • Retrofit em tempo recorde': 'Mãe de Deus Hospital • Retrofit in record time',
-  'Arquitetura humanizada aliada a rigorosos padrões normativos, priorizando o bem-estar dos pacientes.': 'Humanized architecture combined with strict regulatory standards, prioritizing patient well-being.',
-  'Unidade de Internação — Nível 4': 'Inpatient Unit — Level 4',
+  'Búnquer de Radioterapia & Acelerador Linear': 'Radiotherapy Bunker & Linear Accelerator',
+  'Búnquer de Radioterapia e Acelerador Linear': 'Radiotherapy Bunker & Linear Accelerator',
+  'Hospital Moinhos de Vento • Blindagem pesada de concreto baritado': 'Hospital Moinhos de Vento • Heavy barite concrete shielding',
+  'Estrutura de alta precisão para tratamento oncológico com proteção radiológica rigorosa e conforto térmico para os pacientes.': 'High-precision facility for oncological treatment with rigorous radiation protection and patient thermal comfort.',
+  'Proteção Radiológica • CNEN': 'Radiation Protection • CNEN',
+
+  'Retrofit Estrutural & Preservação Histórica': 'Structural Retrofit & Historic Preservation',
+  'Retrofit Estrutural & Fachada Centenária': 'Structural Retrofit & Centennial Facade',
+  'Colégio Bom Conselho • Fachada centenária preservada com novo andar': 'Colégio Bom Conselho • 100-year-old facade preserved with added floor',
+  'Reconstrução estrutural moderna e ampliação de salas, respeitando a memória afetiva e a arquitetura original de 1900.': 'Modern structural reconstruction and classroom expansion, respecting historical legacy and the original 1900 architecture.',
+  'Patrimônio & História': 'Heritage & History',
+
+  'Internação Hospitalar Premium UNIQUE': 'UNIQUE Premium Inpatient Care',
+  'Área de Internação UNIQUE — 5º Andar Bloco B': 'UNIQUE Inpatient Care Unit — Block B 5th Floor',
+  'Hospital Moinhos de Vento • Ala de internação premium e humanizada': 'Hospital Moinhos de Vento • Premium, humanized inpatient wing',
+  'Acabamentos nobres, conforto acústico e iluminação acolhedora para o bem-estar e recuperação dos pacientes.': 'Refined finishes, acoustic comfort, and welcoming lighting for patient recovery and well-being.',
+  'Hotelaria Hospitalar': 'Hospitality in Healthcare',
+
+  'Modernização do Acesso Principal & Recepção': 'Main Entrance Modernization & Reception',
+  'Modernização do Acesso Principal & Recepção Central': 'Main Entrance Modernization & Central Reception',
+  'Hospital Mãe de Deus • Modernização de acessos e fluxos assistenciais': 'Hospital Mãe de Deus • Access flow and reception modernization',
+  'Adequação dos fluxos de recepção, acessibilidade e circulação de pacientes e emergência em hospital em operação.': 'Adaptation of reception workflows, accessibility, and emergency circulation in an active hospital.',
+  'Engenharia Hospitalar': 'Hospital Engineering',
+
+  'Centro de Quimioterapia & Infusão': 'Chemotherapy & Infusion Center',
+  'Oncoclínicas PUCRS — Quimioterapia & Posto de Enfermagem': 'Oncoclínicas PUCRS — Chemotherapy & Nursing Station',
+  'Hospital São Lucas da PUCRS • Unidade de quimioterapia e infusão humanizada': 'Hospital São Lucas da PUCRS • Humanized chemotherapy and infusion center',
+  'Espaço ergonômico com visão 360° para a equipe de enfermagem e ambiente acolhedor para o tratamento dos pacientes.': 'Ergonomic 360° sightlines for nursing staff and a comforting patient care environment.',
+  'Cuidado Oncológico': 'Oncological Care',
+
+  'Centro Clínico de Diagnóstico Avançado': 'Advanced Diagnostic Clinical Center',
+  'Centro Clínico Raio Som — Diagnóstico Avançado': 'Raio Som Clinical Center — Advanced Diagnostics',
+  'Centro Clínico Raio Som • Complexo com ressonância magnética e tomografia': 'Centro Clínico Raio Som • Imaging facility with MRI and CT scan',
+  'Construção especializada com salas blindadas para ressonância e raio-x, com acessibilidade e conforto integral.': 'Specialized facility with shielded MRI and X-ray rooms, full accessibility, and comfort.',
+  'Diagnóstico & Imagem': 'Imaging & Diagnostics',
+
+  'Centro de Oncologia & Tratamento Avançado': 'Oncology & Advanced Treatment Center',
+  'Rebaixamento de Sapatas Diretas — Bloco A': 'Direct Footing Lowering — Block A',
+  'Hospital Mãe de Deus — Unidade Carlos Gomes (UCG)': 'Mãe de Deus Hospital — Carlos Gomes Unit (UCG)',
+  'Laboratório de Patologia & Biópsias': 'Pathology & Biopsy Laboratory',
+  'Hub Linked de Inovação em Saúde': 'Linked Health Innovation Hub',
+  'Sala de Recuperação Pós-Anestésica (SRPA)': 'Post-Anesthesia Care Unit (PACU)',
+  'Auditório & Centro de Treinamento Médico SAP': 'SAP Medical Training Center & Auditorium',
+  'Foyer & Convivência Médica SAP': 'SAP Medical Lounge & Foyer',
+  'Saguão Institucional & Conexões SAP': 'SAP Institutional Lobby & Concourse',
+
+  'Saúde Crítica': 'Critical Healthcare',
+  'Superestrutura': 'Superstructure',
+  'Proteção CNEN': 'CNEN Shielding',
+  'Patrimônio': 'Heritage',
+  'Oncologia': 'Oncology',
+  'Hospitalar Premium': 'Premium Healthcare',
+  'Geotecnia & Fundações': 'Geotechnics & Foundations',
+  'Fluxos & Recepção': 'Access Flows & Reception',
+  'Centro Cirúrgico & Ambulatório': 'Surgical & Outpatient Unit',
+  'Laboratório & Pesquisa': 'Laboratory & Research',
+  'Inovação & Tecnologia': 'Innovation & Technology',
+  'Bloco Cirúrgico': 'Surgical Suite',
+  'Corporativo & Médico': 'Corporate & Healthcare',
+  'Espaço Institucional': 'Institutional Space',
+  'Circulação & Recepção': 'Reception & Circulation',
+
+  'Alta Densidade': 'High Density Concrete',
+  'Fachada de 1900': '1900 Centennial Facade',
+  'Bloco B': 'Block B',
+  'Carga Ativa': 'Active Structural Load',
+  'Acessibilidade & RDC 50': 'Accessibility & ANVISA RDC 50',
+  'Ressonância & TC': 'MRI & CT Scan',
+  'Visão 360°': '360° Sightlines',
+  'Capelas de Exaustão': 'Chemical Fume Hoods',
+  'Infraestrutura Tecnológica': 'Tech Infrastructure',
+  'Monitoramento Contínuo': 'Continuous Monitoring',
+  'Acústica de Precisão': 'Precision Acoustics',
+  'Conforto & Humanização': 'Comfort & Humanization',
+  'Fluxos & Acessibilidade': 'Flows & Accessibility',
+  'Engenharia & Obras': 'Engineering & Works',
+
+  'Centro Oncológico': 'Oncology Center',
+  'Ala de Internação': 'Inpatient Ward',
+  '3 Pilares': '3 Columns',
+  'Acesso Central': 'Central Access',
+  'Unidade Ambulatorial': 'Outpatient Clinic',
+  'Centro de Infusão': 'Infusion Center',
+  'Ala Laboratorial': 'Laboratory Wing',
+  'Espaço Colaborativo': 'Collaborative Space',
+  'Ala Cirúrgica': 'Surgical Wing',
+  'Auditório & Foyer': 'Auditorium & Foyer',
+  'Foyer e Recepção': 'Foyer & Reception',
+  'Saguão de Eventos': 'Events Lobby',
+  'Concreto Baritado': 'Barite Concrete',
+
+  'Implantação de unidade de cuidados intensivos com leitos individualizados de isolamento sob pressão controlada e monitoramento hemodinâmico contínuo.': 'Implementation of an intensive care unit with private isolation beds under controlled pressure and continuous hemodynamic monitoring.',
+  'Piso vinílico condutivo com dissipação estática, iluminação circadiana para conforto dos pacientes, antecâmaras com intertravamento e filtragem de ar HEPA absoluta.': 'Conductive vinyl flooring with static dissipation, circadian lighting for patient well-being, interlocking anterooms, and HEPA absolute air filtration.',
+  'Construção de superestrutura metálica no topo do hospital ativo para abrigar Bloco Cirúrgico de Alta Complexidade, CME e CTI, ocupando 90% da projeção do hospital.': 'Construction of a metallic superstructure atop an active hospital to house a High-Complexity Surgical Suite, Sterile Processing Department (CME), and ICU across 90% of the building footprint.',
+  'Retirada controlada do telhado existente e montagem de estrutura metálica leve com lajes steel deck sem nenhuma paralisação das atividades hospitalares nos andares inferiores.': 'Controlled removal of the existing roof and assembly of a lightweight steel frame with steel deck slabs without interrupting healthcare activities on lower floors.',
+  'Execução de búnquer para acelerador linear de última geração com rigorosa blindagem de concreto baritado e conformidade estrita CNEN.': 'Execution of a bunker for a state-of-the-art linear accelerator with heavy barite concrete shielding in strict compliance with CNEN.',
+  'Controle de dosagem de concreto baritado de alta densidade, portas de chumbo maciço motorizadas e sistema dedicado de exaustão e climatização.': 'Strict mix control for high-density barite concrete, motorized solid lead doors, and dedicated exhaust and HVAC systems.',
+  'Demolição interna integral de prédio centenário de quatro andares, preservando unicamente as paredes externas e adicionando um quinto pavimento estrutural.': 'Complete internal demolition of a 100-year-old four-story building, preserving solely the perimeter facade and adding a new fifth structural floor.',
+  'Cimbramento metálico pesado externo para travamento de paredes históricas e reconstrução de lajes com nova malha estrutural interna independente.': 'Heavy external steel shoring to brace historic perimeter walls and reconstruction of floor slabs with an independent internal structural frame.',
+  'Instalações de alta complexidade para consultas oncológicas, triagem e infusão em ambiente humanizado.': 'High-complexity MEP installations for oncological consultations, triage, and infusion in a human-centered environment.',
+  'Layout planejado com fluxos assépticos protegidos, controle de ventilação e acabamentos bacteriostáticos.': 'Carefully planned layout with protected aseptic flows, positive ventilation control, and bacteriostatic finishes.',
+  'Execução de obras civis e instalações prediais de alta complexidade para ala de internação premium no 5º andar do Bloco B.': 'Execution of civil works and high-complexity MEP installations for a premium inpatient wing on the 5th floor of Block B.',
+  'Acabamentos nobres bacteriostáticos, isolamento acústico entre apartamentos, postos de enfermagem ergonômicos e automação hospitalar.': 'Refined bacteriostatic finishes, inter-room acoustic insulation, ergonomic nursing stations, and building automation.',
+  'Rebaixamento geotécnico de fundações diretas de três pilares de edifício de 7 andares para ampliação do Pronto Atendimento.': 'Geotechnical lowering of direct footings supporting three columns of a 7-story building for Emergency Department expansion.',
+  'Escoramento com macacos hidráulicos automatizados, transferência contínua de esforços e criação de novas sapatas em subsolo confinado com carga ativa.': 'Shoring with automated hydraulic jacks, continuous load transfer, and construction of new footings in a confined basement under active structural load.',
+  'Reforma do acesso principal do hospital sem interrupção do fluxo de emergência, visitantes e ambulâncias.': 'Renovation of the hospital main entrance without interrupting emergency, visitor, or ambulance flows.',
+  'Faseamento de intervenções, demolições silenciosas noturnas, isolamento com anteparo de contenção e pisos de alta durabilidade.': 'Phased interventions, quiet night demolitions, dust containment barriers, and heavy-duty hospital flooring.',
+  'Execução de áreas de procedimentos ambulatoriais e salas cirúrgicas com conformidade sanitária rigorosa.': 'Execution of outpatient procedural suites and operating rooms with strict healthcare regulatory compliance.',
+  'Instalação de climatização com filtragem absoluta, gases medicinais canalizados e pisos vinílicos hospitalares contínuos.': 'Installation of absolute-filtered HVAC, piped medical gases, and seamless commercial vinyl healthcare flooring.',
+  'Construção de complexo de diagnóstico com subsolo de estacionamento, recepções, tomografia, ressonância magnética, mamografia e raio-X.': 'Construction of a diagnostic complex featuring underground parking, receptions, CT scan, MRI, mammography, and X-ray suites.',
+  'Cálculo e execução de baritagem de paredes com espessuras milimétricas e redes de energia estabilizada com redundância.': 'Calculation and execution of lead/barite wall shielding with millimeter precision and redundant conditioned power networks.',
+  'Adaptação de unidade de infusão quimioterápica com postos centrais de enfermagem e linha de visão 360° para segurança medicamentosa.': 'Adaptation of a chemotherapy infusion unit featuring central nursing stations and 360° sightlines for medication safety.',
+  'Mobiliário em superfícies não porosas Corian, iluminação técnica antiofuscamento e fluxo estéril rigoroso.': 'Custom non-porous Corian furnishings, anti-glare technical lighting, and strict sterile workflow routing.',
+  'Instalação de capelas de exaustão química para manuseio de reagentes biológicos e solventes com descarte seguro.': 'Installation of chemical fume hoods for handling biological reagents and solvents with safe air extraction.',
+  'Tubulações em materiais resistentes a corrosão, sistemas de exaustão com controle de tiragem e piso antiderrapante asséptico.': 'Corrosion-resistant piping, variable air volume exhaust systems, and aseptic slip-resistant flooring.',
+  'Adaptação de ambiente tecnológico multiuso integrando startups de saúde e pesquisadores médicos.': 'Adaptation of a multipurpose tech environment bringing together healthtech startups and medical researchers.',
+  'Instalação de cabeamento estruturado de alta capacidade, climatização de precisão e layout modular aberto.': 'Installation of high-capacity structured cabling, precision climate control, and modular open layout.',
+  'Ampliação e modernização da sala de recuperação pós-anestésica anexa ao centro cirúrgico principal em plena atividade.': 'Expansion and modernization of the post-anesthesia recovery room adjacent to the fully operational main surgical suite.',
+  'Réguas hospitalares completas para monitorização multiparamétrica de leitos, iluminação regulável e posto central com ampla visibilidade.': 'Full-featured architectural bedhead units for multiparametric monitoring, dimmable lighting, and a central station with panoramic sightlines.',
+  'Construção de auditório médico com acústica de precisão para transmissão simultânea de procedimentos cirúrgicos e conferências.': 'Construction of a medical auditorium with precision acoustics for live surgery broadcasting and conferences.',
+  'Painéis acústicos difusores amadeirados, poltronas ergonômicas com bancada técnica e sistema de iluminação dimerizável.': 'Wood-finish acoustic diffuser panels, ergonomic conference seating with technical desks, and automated dimming.',
+  'Criação de espaço de acolhimento e recepção integrado ao auditório e salas de aula médicas.': 'Creation of a reception and hospitality space integrated with the auditorium and medical classrooms.',
+  'Acabamentos nobres, iluminação linear contínua e integração visual harmoniosa com áreas externas.': 'Refined finishes, continuous linear lighting, and harmonious visual connection with outdoor courtyards.',
+  'Interligação entre setores administrativos, acadêmicos e assistenciais com alta demanda de circulação.': 'Interconnection between administrative, academic, and clinical departments with high foot-traffic demand.',
+  'Piso vinílico de alta resistência, sinalização direcional integrada e proteção termoacústica.': 'Heavy-duty vinyl flooring, integrated directional wayfinding signage, and thermal-acoustic insulation.',
+
+  'Por favor, preencha todos os campos obrigatórios (*).': 'Please fill in all required fields (*).',
+  'É necessário aceitar os termos da LGPD para envio dos dados.': 'You must accept the terms to submit your inquiry.',
+  'É necessário aceitar os termos para envio dos dados.': 'You must accept the terms to submit your inquiry.',
+  'Enviando dados...': 'Sending...',
+  'Não foi possível enviar a mensagem no momento. Por favor, tente novamente ou contate diretamente via WhatsApp ou telefone.': 'Unable to send message at this time. Please try again or contact us directly via WhatsApp or phone.',
 
   'Abrir Projeto Completo': 'Open Full Project',
   'Fechar projeto': 'Close project',
@@ -24,11 +157,7 @@ const TRANSLATIONS = {
   'Foco Principal': 'Main Focus',
   'Desafio Superado': 'Overcome Challenge',
   'O que entregamos': 'What we delivered',
-
-  'Nossos Telefones': 'Our Phones',
-  'Horário de Atendimento': 'Business Hours',
-  'Endereço Corporativo': 'Corporate Address',
-  'Detalhes do Projeto': 'Project Details',
+  'Detalhes do Projeto': 'Project Details'
 };
 
 function t(text) {
@@ -58,79 +187,79 @@ const HERO_PROJECTS = [
   {
     id: 'hdp-oitavo',
     shortName: '8º Andar — HDP',
-    title: 'Construção do 8º Andar — Bloco Cirúrgico, CME & CTI',
+    title: t('Construção do 8º Andar — Bloco Cirúrgico, CME & CTI'),
     client: 'Hospital Divina Providência',
     location: 'Porto Alegre, RS',
-    tag: 'Superestrutura • 1.822 m²',
+    tag: t('Superestrutura • 1.822 m²'),
     image: '/images/obras/hdp-oitavo-andar.jpg',
-    stat: 'Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital',
-    summary: 'Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.'
+    stat: t('Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital'),
+    summary: t('Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.')
   },
   {
     id: 'acelerador-hmv',
     shortName: 'Radioterapia — HMV',
-    title: 'Búnquer de Radioterapia & Acelerador Linear',
+    title: t('Búnquer de Radioterapia & Acelerador Linear'),
     client: 'Hospital Moinhos de Vento',
     location: 'Porto Alegre, RS',
-    tag: 'Proteção Radiológica • CNEN',
+    tag: t('Proteção Radiológica • CNEN'),
     image: '/images/obras/hmv-acelerador-linear.jpg',
-    stat: 'Hospital Moinhos de Vento • Blindagem pesada de concreto baritado',
-    summary: 'Estrutura de alta precisão para tratamento oncológico com proteção radiológica rigorosa e conforto térmico para os pacientes.'
+    stat: t('Hospital Moinhos de Vento • Blindagem pesada de concreto baritado'),
+    summary: t('Estrutura de alta precisão para tratamento oncológico com proteção radiológica rigorosa e conforto térmico para os pacientes.')
   },
   {
     id: 'bom-conselho',
     shortName: 'Bom Conselho',
-    title: 'Retrofit Estrutural & Preservação Histórica',
+    title: t('Retrofit Estrutural & Preservação Histórica'),
     client: 'Colégio Bom Conselho',
     location: 'Porto Alegre, RS',
-    tag: 'Patrimônio & História',
+    tag: t('Patrimônio & História'),
     image: '/images/obras/colegio-bom-conselho-fachada.jpg',
-    stat: 'Colégio Bom Conselho • Fachada centenária preservada com novo andar',
-    summary: 'Reconstrução estrutural moderna e ampliação de salas, respeitando a memória afetiva e a arquitetura original de 1900.'
+    stat: t('Colégio Bom Conselho • Fachada centenária preservada com novo andar'),
+    summary: t('Reconstrução estrutural moderna e ampliação de salas, respeitando a memória afetiva e a arquitetura original de 1900.')
   },
   {
     id: 'unique-hmv',
     shortName: 'Ala UNIQUE — HMV',
-    title: 'Internação Hospitalar Premium UNIQUE',
+    title: t('Internação Hospitalar Premium UNIQUE'),
     client: 'Hospital Moinhos de Vento',
     location: 'Porto Alegre, RS',
-    tag: 'Hotelaria Hospitalar',
+    tag: t('Hotelaria Hospitalar'),
     image: '/images/obras/hmv-unique-internacao.jpg',
-    stat: 'Hospital Moinhos de Vento • Ala de internação premium e humanizada',
-    summary: 'Acabamentos nobres, conforto acústico e iluminação acolhedora para o bem-estar e recuperação dos pacientes.'
+    stat: t('Hospital Moinhos de Vento • Ala de internação premium e humanizada'),
+    summary: t('Acabamentos nobres, conforto acústico e iluminação acolhedora para o bem-estar e recuperação dos pacientes.')
   },
   {
     id: 'hmd-acesso',
     shortName: 'Acesso — Mãe de Deus',
-    title: 'Modernização do Acesso Principal & Recepção',
+    title: t('Modernização do Acesso Principal & Recepção'),
     client: 'Hospital Mãe de Deus',
     location: 'Porto Alegre, RS',
-    tag: 'Engenharia Hospitalar',
+    tag: t('Engenharia Hospitalar'),
     image: '/images/obras/hmd-acesso-principal.jpg',
-    stat: 'Hospital Mãe de Deus • Modernização de acessos e fluxos assistenciais',
-    summary: 'Adequação dos fluxos de recepção, acessibilidade e circulação de pacientes e emergência em hospital em operação.'
+    stat: t('Hospital Mãe de Deus • Modernização de acessos e fluxos assistenciais'),
+    summary: t('Adequação dos fluxos de recepção, acessibilidade e circulação de pacientes e emergência em hospital em operação.')
   },
   {
     id: 'puc-onco',
     shortName: 'Oncologia — PUCRS',
-    title: 'Centro de Quimioterapia & Infusão',
+    title: t('Centro de Quimioterapia & Infusão'),
     client: 'Hospital São Lucas da PUCRS',
     location: 'Porto Alegre, RS',
-    tag: 'Cuidado Oncológico',
+    tag: t('Cuidado Oncológico'),
     image: '/images/obras/puc-oncoclinicas-posto.jpg',
-    stat: 'Hospital São Lucas da PUCRS • Unidade de quimioterapia e infusão humanizada',
-    summary: 'Espaço ergonômico com visão 360° para a equipe de enfermagem e ambiente acolhedor para o tratamento dos pacientes.'
+    stat: t('Hospital São Lucas da PUCRS • Unidade de quimioterapia e infusão humanizada'),
+    summary: t('Espaço ergonômico com visão 360° para a equipe de enfermagem e ambiente acolhedor para o tratamento dos pacientes.')
   },
   {
     id: 'raioson',
     shortName: 'Raio Som — Diagnóstico',
-    title: 'Centro Clínico de Diagnóstico Avançado',
+    title: t('Centro Clínico de Diagnóstico Avançado'),
     client: 'Centro Clínico Raio Som',
     location: 'Gravataí, RS',
-    tag: 'Diagnóstico & Imagem',
+    tag: t('Diagnóstico & Imagem'),
     image: '/images/obras/raioson-gravatai.jpg',
-    stat: 'Centro Clínico Raio Som • Complexo com ressonância magnética e tomografia',
-    summary: 'Construção especializada com salas blindadas para ressonância e raio-x, com acessibilidade e conforto integral.'
+    stat: t('Centro Clínico Raio Som • Complexo com ressonância magnética e tomografia'),
+    summary: t('Construção especializada com salas blindadas para ressonância e raio-x, com acessibilidade e conforto integral.')
   }
 ];
 
@@ -1462,7 +1591,9 @@ function initPortfolio() {
   let activeCategory = 'todos';
   let showAll = false;
 
-  if (countHeaderEl) countHeaderEl.textContent = `${PROJECTS.length} Obras Catalogadas`;
+  if (countHeaderEl) {
+    countHeaderEl.textContent = `${PROJECTS.length} ${window.LANGUAGE === 'en' ? 'Cataloged Projects' : 'Obras Catalogadas'}`;
+  }
 
   if (filtersContainer) {
     filtersContainer.innerHTML = '';
@@ -1476,7 +1607,7 @@ function initPortfolio() {
           : 'bg-white text-neutral-600 border-neutral-200 hover:border-neutral-300 hover:text-black'
       }`;
       btn.innerHTML = `
-        <span>${cat.label}</span>
+        <span>${t(cat.label)}</span>
         <span class="text-[10px] px-1.5 py-0.5 rounded-full ${cat.id === 'todos' ? 'bg-neutral-800 text-white' : 'bg-neutral-100 text-neutral-600'}">${count}</span>
       `;
 
@@ -1521,7 +1652,7 @@ function initPortfolio() {
           <div class="aspect-[16/10] overflow-hidden bg-neutral-100 relative">
             <img
               src="${project.image}"
-              alt="${project.title}"
+              alt="${t(project.title)}"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
@@ -1529,17 +1660,17 @@ function initPortfolio() {
           <div class="p-5 sm:p-6 space-y-2">
             <span class="text-xs text-neutral-400 block font-medium uppercase tracking-wider truncate">${project.client}</span>
             <h3 class="font-medium text-base sm:text-lg text-neutral-900 group-hover:text-brand-orange transition-colors leading-snug line-clamp-2">
-              ${project.title}
+              ${t(project.title)}
             </h3>
             <div class="text-xs sm:text-sm text-neutral-500 font-light flex items-center gap-2 sm:gap-3 pt-1 sm:pt-2">
-              <span>${project.area || project.location}</span>
+              <span>${t(project.area || project.location)}</span>
               <span>•</span>
-              <span>${project.norm || 'Engenharia & Obras'}</span>
+              <span>${t(project.norm || 'Engenharia & Obras')}</span>
             </div>
           </div>
         </div>
         <div class="px-5 sm:px-6 pb-5 sm:pb-6 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs sm:text-sm font-semibold text-neutral-800 group-hover:text-brand-orange">
-          <span>Ver detalhes</span>
+          <span>${window.LANGUAGE === 'en' ? 'View details' : 'Ver detalhes'}</span>
           <span>→</span>
         </div>
       `;
@@ -1593,22 +1724,24 @@ function openProjectModal(project) {
 
   if (imgEl) {
     imgEl.src = project.image;
-    imgEl.alt = project.title;
+    imgEl.alt = t(project.title);
     imgEl.onerror = () => {
       imgEl.src = '/images/obras/hmv-uti-adulto-01.jpg';
     };
   }
 
-  if (titleEl) titleEl.textContent = project.title;
+  if (titleEl) titleEl.textContent = t(project.title);
   if (clientEl) clientEl.textContent = project.client;
-  if (locationEl) locationEl.textContent = `Local: ${project.location} ${project.area ? `• Área: ${project.area}` : ''}`;
-  if (catEl) catEl.textContent = project.categoryLabel;
+  if (locationEl) {
+    locationEl.textContent = `${window.LANGUAGE === 'en' ? 'Location' : 'Local'}: ${project.location} ${project.area ? `• ${window.LANGUAGE === 'en' ? 'Area' : 'Área'}: ${t(project.area)}` : ''}`;
+  }
+  if (catEl) catEl.textContent = t(project.categoryLabel);
   if (headerCatEl) headerCatEl.textContent = t('Detalhes do Projeto');
 
   if (challengeWrap && challengeEl) {
     if (project.challenge) {
       challengeWrap.classList.remove('hidden');
-      challengeEl.textContent = project.challenge;
+      challengeEl.textContent = t(project.challenge);
     } else {
       challengeWrap.classList.add('hidden');
     }
@@ -1617,7 +1750,7 @@ function openProjectModal(project) {
   if (solutionWrap && solutionEl) {
     if (project.solution) {
       solutionWrap.classList.remove('hidden');
-      solutionEl.textContent = project.solution;
+      solutionEl.textContent = t(project.solution);
     } else {
       solutionWrap.classList.add('hidden');
     }
@@ -1797,14 +1930,14 @@ function initInstagramFeed() {
       if (slideTitleEl) slideTitleEl.classList.add('hidden');
     }
 
-    if (captionEl) captionEl.textContent = post.caption || 'Acompanhe as obras da FORMAS & EFEITO no Instagram.';
+    if (captionEl) captionEl.textContent = post.caption || (window.LANGUAGE === 'en' ? 'Follow FORMAS & EFEITO projects on Instagram.' : 'Acompanhe as obras da FORMAS & EFEITO no Instagram.');
     if (dateEl) {
       const d = post.timestamp ? new Date(post.timestamp) : new Date();
-      dateEl.textContent = d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
+      dateEl.textContent = d.toLocaleDateString(window.LANGUAGE === 'en' ? 'en-US' : 'pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
     }
     if (likesEl) {
       const likes = Number(post.likes);
-      likesEl.textContent = Number.isFinite(likes) && likes > 0 ? `❤️ ${likes} curtidas` : '';
+      likesEl.textContent = Number.isFinite(likes) && likes > 0 ? (window.LANGUAGE === 'en' ? `❤️ ${likes} likes` : `❤️ ${likes} curtidas`) : '';
       likesEl.classList.toggle('hidden', !Number.isFinite(likes) || likes <= 0);
     }
     if (permalinkEl) {
