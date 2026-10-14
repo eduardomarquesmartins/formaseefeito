@@ -180,7 +180,7 @@ const HERO_PROJECTS = [
     client: 'Hospital Moinhos de Vento',
     location: 'Porto Alegre, RS',
     tag: t('Saúde Crítica • Cuidado Máximo'),
-    image: '/images/obras/hmv-uti-adulto-01.jpg',
+    image: '/images/obras/hmv-uti-adulto-01.webp',
     stat: t('Hospital Moinhos de Vento • CTI executado sem interromper a rotina assistencial'),
     summary: t('Leitos de isolamento individuais, pressão controlada e filtragem de ar de alta eficiência para proteção total dos pacientes.')
   },
@@ -191,7 +191,7 @@ const HERO_PROJECTS = [
     client: 'Hospital Divina Providência',
     location: 'Porto Alegre, RS',
     tag: t('Superestrutura • 1.822 m²'),
-    image: '/images/obras/hdp-oitavo-andar.jpg',
+    image: '/images/obras/hdp-oitavo-andar.webp',
     stat: t('Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital'),
     summary: t('Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.')
   },
@@ -202,7 +202,7 @@ const HERO_PROJECTS = [
     client: 'Hospital Moinhos de Vento',
     location: 'Porto Alegre, RS',
     tag: t('Proteção Radiológica • CNEN'),
-    image: '/images/obras/hmv-acelerador-linear.jpg',
+    image: '/images/obras/hmv-acelerador-linear.webp',
     stat: t('Hospital Moinhos de Vento • Blindagem pesada de concreto baritado'),
     summary: t('Estrutura de alta precisão para tratamento oncológico com proteção radiológica rigorosa e conforto térmico para os pacientes.')
   },
@@ -213,7 +213,7 @@ const HERO_PROJECTS = [
     client: 'Colégio Bom Conselho',
     location: 'Porto Alegre, RS',
     tag: t('Patrimônio & História'),
-    image: '/images/obras/colegio-bom-conselho-fachada.jpg',
+    image: '/images/obras/colegio-bom-conselho-fachada.webp',
     stat: t('Colégio Bom Conselho • Fachada centenária preservada com novo andar'),
     summary: t('Reconstrução estrutural moderna e ampliação de salas, respeitando a memória afetiva e a arquitetura original de 1900.')
   },
@@ -224,7 +224,7 @@ const HERO_PROJECTS = [
     client: 'Hospital Moinhos de Vento',
     location: 'Porto Alegre, RS',
     tag: t('Hotelaria Hospitalar'),
-    image: '/images/obras/hmv-unique-internacao.jpg',
+    image: '/images/obras/hmv-unique-internacao.webp',
     stat: t('Hospital Moinhos de Vento • Ala de internação premium e humanizada'),
     summary: t('Acabamentos nobres, conforto acústico e iluminação acolhedora para o bem-estar e recuperação dos pacientes.')
   },
@@ -235,7 +235,7 @@ const HERO_PROJECTS = [
     client: 'Hospital Mãe de Deus',
     location: 'Porto Alegre, RS',
     tag: t('Engenharia Hospitalar'),
-    image: '/images/obras/hmd-acesso-principal.jpg',
+    image: '/images/obras/hmd-acesso-principal.webp',
     stat: t('Hospital Mãe de Deus • Modernização de acessos e fluxos assistenciais'),
     summary: t('Adequação dos fluxos de recepção, acessibilidade e circulação de pacientes e emergência em hospital em operação.')
   },
@@ -246,7 +246,7 @@ const HERO_PROJECTS = [
     client: 'Hospital São Lucas da PUCRS',
     location: 'Porto Alegre, RS',
     tag: t('Cuidado Oncológico'),
-    image: '/images/obras/puc-oncoclinicas-posto.jpg',
+    image: '/images/obras/puc-oncoclinicas-posto.webp',
     stat: t('Hospital São Lucas da PUCRS • Unidade de quimioterapia e infusão humanizada'),
     summary: t('Espaço ergonômico com visão 360° para a equipe de enfermagem e ambiente acolhedor para o tratamento dos pacientes.')
   },
@@ -257,7 +257,7 @@ const HERO_PROJECTS = [
     client: 'Centro Clínico Raio Som',
     location: 'Gravataí, RS',
     tag: t('Diagnóstico & Imagem'),
-    image: '/images/obras/raioson-gravatai.jpg',
+    image: '/images/obras/raioson-gravatai.webp',
     stat: t('Centro Clínico Raio Som • Complexo com ressonância magnética e tomografia'),
     summary: t('Construção especializada com salas blindadas para ressonância e raio-x, com acessibilidade e conforto integral.')
   }
@@ -271,7 +271,7 @@ const SPECIALTIES = [
     scope: 'Fluxo Laminar & Proteção Antiestática',
     description: 'Projetos e reformas de salas cirúrgicas de alta complexidade com insuflamento de ar laminar estéril sobre o campo operatório, pisos condutivos dissipativos para aterramento de descargas eletrostáticas, portas automáticas herméticas e antecâmaras assépticas.',
     deliverables: ['Piso condutivo com medição ôhmica', 'Dutos de climatização com filtros HEPA H14', 'Painéis de comando cirúrgico integrados', 'Blindagem para radioscopia intervencionista'],
-    image: '/images/obras/hmv-uti-corredor.jpg',
+    image: '/images/obras/hmv-uti-corredor.webp',
     reference: 'Hospital Moinhos de Vento'
   },
   {
@@ -281,7 +281,7 @@ const SPECIALTIES = [
     scope: 'Blindagem Radiológica Pesada',
     description: 'Cálculo volumétrico, compatibilização executiva e execução de búnqueres com paredes e labirintos em concreto baritado de altíssima densidade para aceleradores lineares, garantindo contenção absoluta de radiação ionizante.',
     deliverables: ['Cálculo de blindagem conforme CNEN', 'Paredes e lajes em concreto de alta densidade', 'Portas de chumbo maciço motorizadas', 'Farmácia de manipulação de quimioterápicos'],
-    image: '/images/obras/hmv-acelerador-linear.jpg',
+    image: '/images/obras/hmv-acelerador-linear.webp',
     reference: 'Hospital Moinhos de Vento'
   },
   {
@@ -291,7 +291,7 @@ const SPECIALTIES = [
     scope: 'Isolamentos com Pressão Diferencial',
     description: 'Unidades de terapia intensiva individualizadas com controle rigoroso de pressão positiva (imunodeprimidos) e pressão negativa (isolamento de aerossóis), garantindo que agentes infecciosos não se propaguem pelo hospital.',
     deliverables: ['Antecâmaras com intertravamento de portas', 'Monitoramento digital de pressão e vazão de ar', 'Postos de enfermagem com linha de visão 100%', 'Gases medicinais em réguas cabeceiras ergonômicas'],
-    image: '/images/obras/hmv-uti-adulto-01.jpg',
+    image: '/images/obras/hmv-uti-adulto-01.webp',
     reference: 'Hospital Moinhos de Vento'
   },
   {
@@ -301,7 +301,7 @@ const SPECIALTIES = [
     scope: 'Barreira Asséptica Absoluta',
     description: 'Arquitetura com barreira física intransponível e fluxo unidirecional rígido: setor sujo (expurgo e lavagem ultrassônica), setor limpo (preparo e empacotamento) e setor estéril (autoclaves de dupla porta e arsenal cirúrgico).',
     deliverables: ['Zoneamento sem cruzamento de fluxos', 'Autoclaves com barreira física de vedação', 'Água desmineralizada e ar comprimido medicinal', 'Exaustão forçada de vapores e calor'],
-    image: '/images/obras/hdp-oitavo-andar.jpg',
+    image: '/images/obras/hdp-oitavo-andar.webp',
     reference: 'Hospital Divina Providência'
   },
   {
@@ -311,7 +311,7 @@ const SPECIALTIES = [
     scope: 'Continuidade Operacional Ininterrupta',
     description: 'Dimensionamento de centrais de oxigênio, ar comprimido medicinal, óxido nitroso e vácuo clínico, associados a sistemas elétricos com transformadores de isolamento (IT Médico) e grupos geradores de acionamento em milissegundos.',
     deliverables: ['Redes de gases em cobre fosforoso medicinal', 'Sistemas de alarme visual e sonoro de pressão', 'Quadros elétricos IT médico dedicados', 'No-breaks centrais para suporte vital'],
-    image: '/images/obras/hmv-centro-cancer.jpg',
+    image: '/images/obras/hmv-centro-cancer.webp',
     reference: 'Hospital Moinhos de Vento'
   },
   {
@@ -321,7 +321,7 @@ const SPECIALTIES = [
     scope: 'Contenção de Contaminação e Ruído',
     description: 'Metodologia exclusiva da Formas & Efeito para reformas sem interrupção de leitos ou cirurgias: barreiras estanques com exaustão por pressão negativa, bloqueio de vibrações, horários de transporte de entulho noturno e vistorias sanitárias diárias.',
     deliverables: ['Barreiras físicas de fechamento total', 'Pressão negativa com filtros HEPA para pó', 'Rotas de circulação de obra independentes', 'Horários negociados com a diretoria clínica'],
-    image: '/images/obras/hdp-reforco-fundacao-01.jpg',
+    image: '/images/obras/hdp-reforco-fundacao-01.webp',
     reference: 'Hospital Divina Providência'
   }
 ];
@@ -1677,7 +1677,7 @@ function initPortfolio() {
 
       const img = card.querySelector('img');
       img.onerror = () => {
-        img.src = '/images/obras/hmv-uti-adulto-01.jpg';
+        img.src = '/images/obras/hmv-uti-adulto-01.webp';
       };
 
       card.addEventListener('click', () => openProjectModal(project));
@@ -1726,7 +1726,7 @@ function openProjectModal(project) {
     imgEl.src = project.image;
     imgEl.alt = t(project.title);
     imgEl.onerror = () => {
-      imgEl.src = '/images/obras/hmv-uti-adulto-01.jpg';
+      imgEl.src = '/images/obras/hmv-uti-adulto-01.webp';
     };
   }
 

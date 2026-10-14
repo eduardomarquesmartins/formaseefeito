@@ -6,7 +6,7 @@ export const ENGINEERING_CHALLENGES = [
     location: 'Porto Alegre, RS',
     tag: 'Engenharia Estrutural & Superestrutura',
     area: '1.822,30 m²',
-    image: '/images/obras/hdp-oitavo-andar.jpg',
+    image: '/images/obras/hdp-oitavo-andar.webp',
     summary: 'Construção de novo pavimento hospitalar cobrindo 90% da área projetada do hospital, substituindo o telhado existente por Bloco Cirúrgico, CTI e CME.',
     scope: [
       'Retirada do telhado existente e montagem de estrutura metálica em hospital em pleno funcionamento',
@@ -28,7 +28,7 @@ export const ENGINEERING_CHALLENGES = [
     location: 'Porto Alegre, RS',
     tag: 'Engenharia Geotécnica & Subsolos',
     area: 'Pronto Atendimento',
-    image: '/images/obras/hdp-reforco-fundacao-01.jpg',
+    image: '/images/obras/hdp-reforco-fundacao-01.webp',
     summary: 'Rebaixamento geotécnico de fundações diretas de três pilares de prédio com 7 pavimentos para viabilizar a ampliação do Pronto Atendimento.',
     scope: [
       'Escoramento e transferência de carga viva de pilares de 7 andares',
@@ -50,7 +50,7 @@ export const ENGINEERING_CHALLENGES = [
     location: 'Porto Alegre, RS',
     tag: 'Patrimônio Histórico & Superestrutura',
     area: 'Edifício de 5 Pavimentos',
-    image: '/images/obras/colegio-bom-conselho-fachada.jpg',
+    image: '/images/obras/colegio-bom-conselho-fachada.webp',
     summary: 'Demolição interna integral de edifício de quatro andares mantendo unicamente as paredes externas da fachada histórica centenária de 1900 intactas e adicionando um novo pavimento.',
     scope: [
       'Cimbramento metálico externo para sustentação estática das paredes históricas',
