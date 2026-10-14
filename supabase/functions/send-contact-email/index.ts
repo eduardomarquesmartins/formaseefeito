@@ -46,7 +46,6 @@ function buildEmailHtml(data: {
   name: string;
   email: string;
   phone: string;
-  demandType: string;
   message: string;
   dateStr: string;
 }) {
@@ -69,7 +68,7 @@ function buildEmailHtml(data: {
                 FORMAS &amp; EFEITO
               </span>
               <h1 style="color: #ffffff; font-size: 22px; font-weight: 700; margin: 0; line-height: 1.3;">
-                Nova Solicitação de Projeto / Contato
+                Novo Contato via Site
               </h1>
             </td>
           </tr>
@@ -78,7 +77,7 @@ function buildEmailHtml(data: {
           <tr>
             <td style="padding: 28px;">
               <p style="margin-top: 0; font-size: 14px; color: #57534e; line-height: 1.5;">
-                Um novo contato comercial foi submetido através do formulário do site oficial:
+                Novo contato via site:
               </p>
 
               <table role="presentation" width="100%" style="border-collapse: collapse; margin-top: 16px; margin-bottom: 24px;">
@@ -97,10 +96,6 @@ function buildEmailHtml(data: {
                   <td style="padding: 10px 0; font-size: 14px; color: #1c1917; font-weight: 600;">
                     <a href="tel:${data.phone.replace(/[^0-9]/g, '')}" style="color: #1c1917; text-decoration: none;">${data.phone}</a>
                   </td>
-                </tr>
-                <tr style="border-bottom: 1px solid #f5f5f4;">
-                  <td style="padding: 10px 0; font-size: 13px; color: #78716c; font-weight: 600;">Tipo de Demanda:</td>
-                  <td style="padding: 10px 0; font-size: 14px; color: #0c1a24; font-weight: 600;">${data.demandType || 'Não informado'}</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #f5f5f4;">
                   <td style="padding: 10px 0; font-size: 13px; color: #78716c; font-weight: 600;">Data do Envio:</td>
@@ -138,7 +133,7 @@ function buildEmailHtml(data: {
           <tr>
             <td style="background-color: #f5f5f4; padding: 18px 28px; text-align: center; border-top: 1px solid #e7e5e4;">
               <span style="font-size: 12px; color: #78716c; display: block;">
-                Este e-mail foi gerado automaticamente pelo formulário do site oficial <strong>formasefeito.com.br</strong>
+                Este e-mail foi gerado automaticamente pelo formulário do site <strong>formasefeito.com.br</strong>
               </span>
               <span style="font-size: 11px; color: #a8a29e; display: block; margin-top: 4px;">
                 Registro salvo no banco de dados com autorização LGPD.
@@ -222,7 +217,7 @@ Deno.serve(async (req: Request) => {
 
     // 4. Busca chaves e configurações do Resend
     const resendApiKey = await getSetting(supabase, 'resend_api_key');
-    const toEmail = (await getSetting(supabase, 'contact_to_email')) || 'formasefeito@formasefeito.com.br';
+    const toEmail = (await getSetting(supabase, 'contact_to_email')) || 'formasefeito@formaseefeito.com.br';
     const fromEmail = (await getSetting(supabase, 'resend_from_email')) || 'Formas & Efeito <onboarding@resend.dev>';
 
     let emailSent = false;
@@ -236,7 +231,6 @@ Deno.serve(async (req: Request) => {
         name,
         email,
         phone,
-        demandType,
         message,
         dateStr
       });
@@ -252,7 +246,7 @@ Deno.serve(async (req: Request) => {
             from: fromEmail,
             to: [toEmail],
             reply_to: email,
-            subject: `[Site Formas & Efeito] Novo contato: ${name} (${demandType || 'Projeto'})`,
+            subject: `[Site Formas & Efeito] Novo contato: ${name}`,
             html
           })
         });

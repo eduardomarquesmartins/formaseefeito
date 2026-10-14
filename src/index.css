@@ -92,6 +92,10 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+  .font-logo, .font-logo * {
+    font-family: 'Libre Bodoni', 'Bodoni Moda', Georgia, serif;
+  }
+
   ::selection {
     background-color: #ea580c;
     color: #ffffff;

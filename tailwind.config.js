@@ -28,6 +28,7 @@ export default {
         sans: ['"Montserrat"', 'system-ui', '-apple-system', 'sans-serif'],
         serif: ['"Poppins"', 'sans-serif'],
         display: ['"Poppins"', 'sans-serif'],
+        logo: ['"Libre Bodoni"', '"Bodoni Moda"', 'Georgia', 'serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       letterSpacing: {
