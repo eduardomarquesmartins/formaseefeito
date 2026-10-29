@@ -82,15 +82,15 @@ export const PROJECTS = [
     solution: 'Piso vinílico condutivo com dissipação estática, iluminação circadiana para conforto dos pacientes, antecâmaras com intertravamento e filtragem de ar HEPA absoluta.'
   },
   {
-    id: 'hdp-oitavo-andar',
-    title: 'Construção do 8º Andar em Hospital Ativo',
+    id: 'hdp-setimo-andar',
+    title: 'Construção do 7º Andar em Hospital Ativo',
     client: 'Hospital Divina Providência',
     location: 'Porto Alegre / RS',
     category: 'hospitalar',
     categoryLabel: 'Superestrutura',
     area: '1.822 m²',
     norm: 'Bloco Cirúrgico',
-    image: '/images/obras/hdp-oitavo-andar.webp',
+    image: '/images/obras/hdp-setimo-andar.webp',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/setimo-andar-hospital-divina-providencia/',
     featured: true,
     challenge: 'Construção de superestrutura metálica no topo do hospital ativo para abrigar Bloco Cirúrgico de Alta Complexidade, CME e CTI, ocupando 90% da projeção do hospital.',
@@ -106,7 +106,7 @@ export const PROJECTS = [
     area: 'Concreto Baritado',
     norm: 'Alta Densidade',
     image: '/images/obras/hmv-acelerador-linear.webp',
-    externalUrl: 'https://www.formasefeito.com.br/portfolio/radioterapia-oncoclinicas-pucrs/',
+    externalUrl: 'https://www.formasefeito.com.br/portfolio/centro-de-oncologia-hospital-moinhos-de-vento/',
     featured: true,
     challenge: 'Execução de búnquer para acelerador linear de última geração com rigorosa blindagem de concreto baritado e conformidade estrita CNEN.',
     solution: 'Controle de dosagem de concreto baritado de alta densidade, portas de chumbo maciço motorizadas e sistema dedicado de exaustão e climatização.'
@@ -187,19 +187,19 @@ export const PROJECTS = [
     solution: 'Faseamento de intervenções, demolições silenciosas noturnas, isolamento com anteparo de contenção e pisos de alta durabilidade.'
   },
   {
-    id: 'hmd-ucg-centro-cirurgico',
-    title: 'Hospital Mãe de Deus — Unidade Carlos Gomes (UCG)',
+    id: 'hmd-ucg-recepcao',
+    title: 'Unidade Carlos Gomes — Recepção e Espera',
     client: 'Hospital Mãe de Deus',
     location: 'Porto Alegre / RS',
     category: 'hospitalar',
-    categoryLabel: 'Centro Cirúrgico & Ambulatório',
-    area: 'Unidade Ambulatorial',
-    norm: 'RDC 50 ANVISA',
-    image: '/images/obras/hmd-ucg-centro-cirurgico.webp',
+    categoryLabel: 'Recepção & Atendimento',
+    area: 'Recepção e espera',
+    norm: 'Fluxos & Acolhimento',
+    image: '/images/obras/hmd-ucg-recepcao.webp',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/hospital-mae-de-deus/',
     featured: false,
-    challenge: 'Execução de áreas de procedimentos ambulatoriais e salas cirúrgicas com conformidade sanitária rigorosa.',
-    solution: 'Instalação de climatização com filtragem absoluta, gases medicinais canalizados e pisos vinílicos hospitalares contínuos.'
+    challenge: 'Recepção e sala de espera da Unidade Carlos Gomes, com postos de atendimento e assentos para pacientes.',
+    solution: 'Ambiente de atendimento com balcões identificados e áreas de espera organizadas.'
   },
   {
     id: 'puc-oncoclinicas-posto',

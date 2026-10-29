@@ -10,8 +10,8 @@ const TRANSLATIONS = {
   'Leitos de isolamento individuais, pressão controlada e filtragem de ar de alta eficiência para proteção total dos pacientes.': 'Individual isolation beds, controlled pressure and high efficiency air filtration for total patient protection.',
   'Saúde Crítica • Cuidado Máximo': 'Critical Healthcare • Maximum Care',
 
-  'Construção do 8º Andar — Bloco Cirúrgico, CME & CTI': '8th Floor Construction — Surgical Block, CME & ICU',
-  'Construção do 8º Andar em Hospital Ativo': '8th Floor Construction in Active Hospital',
+  'Construção do 7º Andar — Bloco Cirúrgico, CME & CTI': '7th Floor Construction — Surgical Block, CME & ICU',
+  'Construção do 7º Andar em Hospital Ativo': '7th Floor Construction in Active Hospital',
   'Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital': 'Hospital Divina Providência • 1,822 m² built without closing the hospital',
   'Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.': 'Construction of a new floor covering 90% of the active hospital, maintaining all surgeries and patient safety.',
   'Superestrutura • 1.822 m²': 'Superstructure • 1,822 m²',
@@ -54,7 +54,12 @@ const TRANSLATIONS = {
 
   'Centro de Oncologia & Tratamento Avançado': 'Oncology & Advanced Treatment Center',
   'Rebaixamento de Sapatas Diretas — Bloco A': 'Direct Footing Lowering — Block A',
-  'Hospital Mãe de Deus — Unidade Carlos Gomes (UCG)': 'Mãe de Deus Hospital — Carlos Gomes Unit (UCG)',
+  'Unidade Carlos Gomes — Recepção e Espera': 'Carlos Gomes Unit — Reception and Waiting Area',
+  'Recepção & Atendimento': 'Reception & Patient Services',
+  'Recepção e espera': 'Reception and waiting area',
+  'Fluxos & Acolhimento': 'Patient Flow & Welcome',
+  'Recepção e sala de espera da Unidade Carlos Gomes, com postos de atendimento e assentos para pacientes.': 'Reception and waiting area at the Carlos Gomes Unit, with service desks and patient seating.',
+  'Ambiente de atendimento com balcões identificados e áreas de espera organizadas.': 'Patient service area with identified desks and organized waiting spaces.',
   'Laboratório de Patologia & Biópsias': 'Pathology & Biopsy Laboratory',
   'Hub Linked de Inovação em Saúde': 'Linked Health Innovation Hub',
   'Sala de Recuperação Pós-Anestésica (SRPA)': 'Post-Anesthesia Care Unit (PACU)',
@@ -185,13 +190,13 @@ const HERO_PROJECTS = [
     summary: t('Leitos de isolamento individuais, pressão controlada e filtragem de ar de alta eficiência para proteção total dos pacientes.')
   },
   {
-    id: 'hdp-oitavo',
-    shortName: '8º Andar — HDP',
-    title: t('Construção do 8º Andar — Bloco Cirúrgico, CME & CTI'),
+    id: 'hdp-setimo',
+    shortName: '7º Andar — HDP',
+    title: t('Construção do 7º Andar — Bloco Cirúrgico, CME & CTI'),
     client: 'Hospital Divina Providência',
     location: 'Porto Alegre, RS',
     tag: t('Superestrutura • 1.822 m²'),
-    image: '/images/obras/hdp-oitavo-andar.webp',
+    image: '/images/obras/hdp-setimo-andar.webp',
     stat: t('Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital'),
     summary: t('Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.')
   },
@@ -301,7 +306,7 @@ const SPECIALTIES = [
     scope: 'Barreira Asséptica Absoluta',
     description: 'Arquitetura com barreira física intransponível e fluxo unidirecional rígido: setor sujo (expurgo e lavagem ultrassônica), setor limpo (preparo e empacotamento) e setor estéril (autoclaves de dupla porta e arsenal cirúrgico).',
     deliverables: ['Zoneamento sem cruzamento de fluxos', 'Autoclaves com barreira física de vedação', 'Água desmineralizada e ar comprimido medicinal', 'Exaustão forçada de vapores e calor'],
-    image: '/images/obras/hdp-oitavo-andar.webp',
+    image: '/images/obras/hdp-setimo-andar.webp',
     reference: 'Hospital Divina Providência'
   },
   {

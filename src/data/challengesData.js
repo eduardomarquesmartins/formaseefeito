@@ -1,12 +1,12 @@
 export const ENGINEERING_CHALLENGES = [
   {
     number: '01',
-    title: 'Construção do 8º Andar em Hospital Ativo',
+    title: 'Construção do 7º Andar em Hospital Ativo',
     client: 'Hospital Divina Providência',
     location: 'Porto Alegre, RS',
     tag: 'Engenharia Estrutural & Superestrutura',
     area: '1.822,30 m²',
-    image: '/images/obras/hdp-oitavo-andar.webp',
+    image: '/images/obras/hdp-setimo-andar.webp',
     summary: 'Construção de novo pavimento hospitalar cobrindo 90% da área projetada do hospital, substituindo o telhado existente por Bloco Cirúrgico, CTI e CME.',
     scope: [
       'Retirada do telhado existente e montagem de estrutura metálica em hospital em pleno funcionamento',
