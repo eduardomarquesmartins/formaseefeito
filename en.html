@@ -688,7 +688,7 @@
                 In high-complexity healthcare engineering, the company
                 established leadership through bold technical interventions: the
                 construction of the
-                <strong>7th Floor of Hospital Divina Providência</strong>
+                <strong>8th Floor of Hospital Divina Providência</strong>
                 (Surgical Block, ICU, Post-Anesthesia Recovery, and CME covering
                 ~90% of the building footprint over the existing roof while the
                 hospital remained 100% active), the
@@ -822,7 +822,7 @@
             </div>
 
             <div
-              data-curated-id="hdp-setimo-andar"
+              data-curated-id="hdp-oitavo-andar"
               class="curated-project-card bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col justify-between"
             >
               <div>
@@ -830,8 +830,8 @@
                   class="aspect-[4/3] overflow-hidden bg-neutral-100 relative"
                 >
                   <img
-                    src="/images/obras/hdp-setimo-andar.webp"
-                    alt="7th Floor HDP"
+                    src="/images/obras/hdp-oitavo-andar.webp"
+                    alt="8th Floor HDP"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -842,7 +842,7 @@
                   <h3
                     class="font-medium text-xs sm:text-sm text-neutral-900 group-hover:text-brand-orange transition-colors leading-snug"
                   >
-                    7th Floor Construction in Active Hospital
+                    8th Floor Construction in Active Hospital
                   </h3>
                   <div
                     class="text-xs text-neutral-500 font-light flex items-center gap-2 sm:gap-3 pt-1 sm:pt-2"
@@ -2084,14 +2084,23 @@
         <div class="overflow-y-auto p-4 sm:p-6 space-y-4 sm:space-y-5 text-xs">
           <div class="flex flex-col gap-5 sm:gap-6 items-start">
             <div class="w-full rounded-xl overflow-hidden bg-neutral-100">
-              <img
-                id="modal-img"
-                src=""
-                alt="Project"
-                class="w-full h-56 sm:h-80 md:h-[450px] object-cover object-center"
-              />
-              <div class="p-2 sm:p-2.5 bg-neutral-900 text-white text-[11px]">
+              <div class="relative">
+                <img
+                  id="modal-img"
+                  src=""
+                  alt="Project"
+                  class="w-full h-56 sm:h-80 md:h-[450px] object-cover object-center"
+                />
+                <button id="modal-gallery-prev" type="button" class="hidden absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-neutral-900 flex items-center justify-center shadow-lg transition-all" aria-label="Previous photo">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+                </button>
+                <button id="modal-gallery-next" type="button" class="hidden absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-neutral-900 flex items-center justify-center shadow-lg transition-all" aria-label="Next photo">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                </button>
+              </div>
+              <div class="p-2 sm:p-2.5 bg-neutral-900 text-white text-[11px] flex items-center justify-between gap-3">
                 <span id="modal-location">Location: Porto Alegre / RS</span>
+                <span id="modal-gallery-count" class="hidden shrink-0" aria-live="polite"></span>
               </div>
             </div>
 
@@ -2111,22 +2120,12 @@
                 </h3>
               </div>
 
-              <div id="modal-challenge-wrap" class="space-y-1">
+              <div id="modal-description-wrap" class="hidden space-y-1">
                 <span class="font-semibold text-neutral-900 block"
-                  >Technical Challenge:</span
+                  >Portfolio description:</span
                 >
                 <p
-                  id="modal-challenge"
-                  class="text-neutral-600 font-light leading-relaxed"
-                ></p>
-              </div>
-
-              <div id="modal-solution-wrap" class="space-y-1">
-                <span class="font-semibold text-neutral-900 block"
-                  >Applied Solution:</span
-                >
-                <p
-                  id="modal-solution"
+                  id="modal-description"
                   class="text-neutral-600 font-light leading-relaxed"
                 ></p>
               </div>

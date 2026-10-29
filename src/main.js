@@ -10,8 +10,14 @@ const TRANSLATIONS = {
   'Leitos de isolamento individuais, pressão controlada e filtragem de ar de alta eficiência para proteção total dos pacientes.': 'Individual isolation beds, controlled pressure and high efficiency air filtration for total patient protection.',
   'Saúde Crítica • Cuidado Máximo': 'Critical Healthcare • Maximum Care',
 
-  'Construção do 7º Andar — Bloco Cirúrgico, CME & CTI': '7th Floor Construction — Surgical Block, CME & ICU',
-  'Construção do 7º Andar em Hospital Ativo': '7th Floor Construction in Active Hospital',
+  'Construção do 8º Andar — Bloco Cirúrgico, CME & CTI': '8th Floor Construction — Surgical Block, CME & ICU',
+  'Construção do 8º Andar em Hospital Ativo': '8th Floor Construction in Active Hospital',
+  'Área de ampliação 1.822,30 m² onde funciona o Bloco Cirúrgico, CME, UTI. Sala de recuperação e áreas de apoio. Obra complexa, que exigiu a retirada do telhado do último pavimento.': 'Expansion area of 1,822.30 m² housing the Surgical Block, CME, ICU, recovery room, and support areas. A complex project that required removing the roof from the top floor.',
+  'Rebaixamento das fundações diretas (sapatas) de três pilares do bloco A, prédio de sete andares, para ampliação da área de Pronto Atendimento.': 'Lowering the direct foundations (footings) of three columns in Block A, a seven-story building, to expand the Emergency Department area.',
+  'Reforma com ampliação do Colégio Bom Conselho, quatro andares do seu interior foram completamente demolidos, ficando somente as paredes externas, contando inclusive com reconstrução de todo pátio e calçada. Sendo reconstruído com um andar a mais e com nova distribuição interna, mantendo as características arquitetônicas da fachada.': 'Renovation and expansion of Colégio Bom Conselho. The interiors of its four floors were completely demolished, leaving only the exterior walls. The courtyard and sidewalk were also rebuilt. The building was reconstructed with one additional floor and a new interior layout, while preserving the architectural features of the facade.',
+  'Remodelação do Centro de Oncologia do Hospital Moinhos de Vento pela Formas & Efeito, transformando-o no Centro de Oncologia mais moderno do Sul do país e um dos principais núcleos de referência no tratamento da doença.': 'Formas & Efeito remodeled the Oncology Center at Moinhos de Vento Hospital, making it one of the most modern oncology centers in southern Brazil and a leading reference for cancer treatment.',
+  'Execução das obras civis e instalações da área de internação, UNIQUE, quinto andar do bloco B.': 'Civil works and installations for the UNIQUE inpatient area on the fifth floor of Block B.',
+  'Construção de um novo prédio com 2.470 m² para o Centro Clínico Raio Som, composto de subsolo (estacionamento), recepção, tomografia, ressonância magnética, mamografia, densitometria óssea, salas de raio X, salas de ecografia, áreas de apoio.': 'Construction of a new 2,470 m² building for Centro Clínico Raio Som, with a basement (parking), reception, CT, MRI, mammography, bone densitometry, X-ray rooms, ultrasound rooms, and support areas.',
   'Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital': 'Hospital Divina Providência • 1,822 m² built without closing the hospital',
   'Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.': 'Construction of a new floor covering 90% of the active hospital, maintaining all surgeries and patient safety.',
   'Superestrutura • 1.822 m²': 'Superstructure • 1,822 m²',
@@ -54,12 +60,7 @@ const TRANSLATIONS = {
 
   'Centro de Oncologia & Tratamento Avançado': 'Oncology & Advanced Treatment Center',
   'Rebaixamento de Sapatas Diretas — Bloco A': 'Direct Footing Lowering — Block A',
-  'Unidade Carlos Gomes — Recepção e Espera': 'Carlos Gomes Unit — Reception and Waiting Area',
-  'Recepção & Atendimento': 'Reception & Patient Services',
-  'Recepção e espera': 'Reception and waiting area',
-  'Fluxos & Acolhimento': 'Patient Flow & Welcome',
-  'Recepção e sala de espera da Unidade Carlos Gomes, com postos de atendimento e assentos para pacientes.': 'Reception and waiting area at the Carlos Gomes Unit, with service desks and patient seating.',
-  'Ambiente de atendimento com balcões identificados e áreas de espera organizadas.': 'Patient service area with identified desks and organized waiting spaces.',
+  'Hospital Mãe de Deus — Unidade Carlos Gomes (UCG)': 'Mãe de Deus Hospital — Carlos Gomes Unit (UCG)',
   'Laboratório de Patologia & Biópsias': 'Pathology & Biopsy Laboratory',
   'Hub Linked de Inovação em Saúde': 'Linked Health Innovation Hub',
   'Sala de Recuperação Pós-Anestésica (SRPA)': 'Post-Anesthesia Care Unit (PACU)',
@@ -190,15 +191,15 @@ const HERO_PROJECTS = [
     summary: t('Leitos de isolamento individuais, pressão controlada e filtragem de ar de alta eficiência para proteção total dos pacientes.')
   },
   {
-    id: 'hdp-setimo',
-    shortName: '7º Andar — HDP',
-    title: t('Construção do 7º Andar — Bloco Cirúrgico, CME & CTI'),
+    id: 'hdp-oitavo',
+    shortName: '8º Andar — HDP',
+    title: t('Construção do 8º Andar — Bloco Cirúrgico, CME & CTI'),
     client: 'Hospital Divina Providência',
     location: 'Porto Alegre, RS',
     tag: t('Superestrutura • 1.822 m²'),
-    image: '/images/obras/hdp-setimo-andar.webp',
+    image: '/images/obras/hdp-oitavo-andar.webp',
     stat: t('Hospital Divina Providência • 1.822 m² construídos sem fechar o hospital'),
-    summary: t('Construção de novo pavimento cobrindo 90% do hospital ativo, mantendo todas as cirurgias e pacientes em segurança absoluta.')
+    summary: t('Área de ampliação 1.822,30 m² onde funciona o Bloco Cirúrgico, CME, UTI. Sala de recuperação e áreas de apoio. Obra complexa, que exigiu a retirada do telhado do último pavimento.')
   },
   {
     id: 'acelerador-hmv',
@@ -306,7 +307,7 @@ const SPECIALTIES = [
     scope: 'Barreira Asséptica Absoluta',
     description: 'Arquitetura com barreira física intransponível e fluxo unidirecional rígido: setor sujo (expurgo e lavagem ultrassônica), setor limpo (preparo e empacotamento) e setor estéril (autoclaves de dupla porta e arsenal cirúrgico).',
     deliverables: ['Zoneamento sem cruzamento de fluxos', 'Autoclaves com barreira física de vedação', 'Água desmineralizada e ar comprimido medicinal', 'Exaustão forçada de vapores e calor'],
-    image: '/images/obras/hdp-setimo-andar.webp',
+    image: '/images/obras/hdp-oitavo-andar.webp',
     reference: 'Hospital Divina Providência'
   },
   {
@@ -1712,28 +1713,56 @@ function initPortfolio() {
 }
 
 let activeModalProject = null;
+let activeModalGallery = [];
+let activeModalGalleryIndex = 0;
+
+function updateModalGallery() {
+  const imgEl = document.getElementById('modal-img');
+  const countEl = document.getElementById('modal-gallery-count');
+  const prevBtn = document.getElementById('modal-gallery-prev');
+  const nextBtn = document.getElementById('modal-gallery-next');
+  if (!imgEl || !activeModalProject || !activeModalGallery.length) return;
+
+  const image = activeModalGallery[activeModalGalleryIndex];
+  imgEl.onerror = () => {
+    imgEl.onerror = null;
+    imgEl.src = '/images/obras/hmv-uti-adulto-01.webp';
+  };
+  imgEl.src = image;
+  imgEl.alt = `${t(activeModalProject.title)} — ${window.LANGUAGE === 'en' ? 'Photo' : 'Foto'} ${activeModalGalleryIndex + 1}`;
+
+  const hasMultiplePhotos = activeModalGallery.length > 1;
+  prevBtn?.classList.toggle('hidden', !hasMultiplePhotos);
+  nextBtn?.classList.toggle('hidden', !hasMultiplePhotos);
+  if (countEl) {
+    countEl.classList.toggle('hidden', !hasMultiplePhotos);
+    countEl.textContent = `${activeModalGalleryIndex + 1} / ${activeModalGallery.length}`;
+  }
+  prevBtn?.setAttribute('aria-label', window.LANGUAGE === 'en' ? 'Previous photo' : 'Foto anterior');
+  nextBtn?.setAttribute('aria-label', window.LANGUAGE === 'en' ? 'Next photo' : 'Próxima foto');
+}
+
+function changeModalPhoto(step) {
+  if (activeModalGallery.length < 2) return;
+  activeModalGalleryIndex = (activeModalGalleryIndex + step + activeModalGallery.length) % activeModalGallery.length;
+  updateModalGallery();
+}
+
 function openProjectModal(project) {
   activeModalProject = project;
+  activeModalGallery = [...new Set([project.image, ...(Array.isArray(project.gallery) ? project.gallery : [])].filter(Boolean))];
+  activeModalGalleryIndex = 0;
   const modal = document.getElementById('project-modal');
-  const imgEl = document.getElementById('modal-img');
   const titleEl = document.getElementById('modal-title');
   const clientEl = document.getElementById('modal-client');
   const locationEl = document.getElementById('modal-location');
   const catEl = document.getElementById('modal-category');
-  const challengeWrap = document.getElementById('modal-challenge-wrap');
-  const challengeEl = document.getElementById('modal-challenge');
-  const solutionWrap = document.getElementById('modal-solution-wrap');
-  const solutionEl = document.getElementById('modal-solution');
+  const descriptionWrap = document.getElementById('modal-description-wrap');
+  const descriptionEl = document.getElementById('modal-description');
   const linkEl = document.getElementById('modal-external-link');
   const headerCatEl = document.getElementById('modal-header-category');
 
-  if (imgEl) {
-    imgEl.src = project.image;
-    imgEl.alt = t(project.title);
-    imgEl.onerror = () => {
-      imgEl.src = '/images/obras/hmv-uti-adulto-01.webp';
-    };
-  }
+  updateModalGallery();
 
   if (titleEl) titleEl.textContent = t(project.title);
   if (clientEl) clientEl.textContent = project.client;
@@ -1743,22 +1772,10 @@ function openProjectModal(project) {
   if (catEl) catEl.textContent = t(project.categoryLabel);
   if (headerCatEl) headerCatEl.textContent = t('Detalhes do Projeto');
 
-  if (challengeWrap && challengeEl) {
-    if (project.challenge) {
-      challengeWrap.classList.remove('hidden');
-      challengeEl.textContent = t(project.challenge);
-    } else {
-      challengeWrap.classList.add('hidden');
-    }
-  }
-
-  if (solutionWrap && solutionEl) {
-    if (project.solution) {
-      solutionWrap.classList.remove('hidden');
-      solutionEl.textContent = t(project.solution);
-    } else {
-      solutionWrap.classList.add('hidden');
-    }
+  if (descriptionWrap && descriptionEl) {
+    const description = project.description ? t(project.description) : '';
+    descriptionEl.textContent = description;
+    descriptionWrap.classList.toggle('hidden', !description);
   }
 
   if (linkEl) {
@@ -1779,12 +1796,16 @@ function closeProjectModal() {
   if (modal) modal.classList.add('hidden');
   document.body.style.overflow = 'unset';
   activeModalProject = null;
+  activeModalGallery = [];
+  activeModalGalleryIndex = 0;
 }
 
 function initModalListeners() {
   const modal = document.getElementById('project-modal');
   const closeBtn = document.getElementById('modal-close-btn');
   const consultBtn = document.getElementById('modal-consult-btn');
+  const prevBtn = document.getElementById('modal-gallery-prev');
+  const nextBtn = document.getElementById('modal-gallery-next');
 
   if (modal) {
     modal.addEventListener('click', (e) => {
@@ -1794,10 +1815,16 @@ function initModalListeners() {
 
   if (closeBtn) closeBtn.addEventListener('click', closeProjectModal);
   if (consultBtn) consultBtn.addEventListener('click', closeProjectModal);
+  if (prevBtn) prevBtn.addEventListener('click', () => changeModalPhoto(-1));
+  if (nextBtn) nextBtn.addEventListener('click', () => changeModalPhoto(1));
 
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && activeModalProject) {
       closeProjectModal();
+    } else if (activeModalProject && e.key === 'ArrowLeft') {
+      changeModalPhoto(-1);
+    } else if (activeModalProject && e.key === 'ArrowRight') {
+      changeModalPhoto(1);
     }
   });
 }

@@ -18,8 +18,6 @@ export const PROJECTS = [
     image: '/images/obras/hmv-foyer.webp',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/convivio-medico-hospital-moinhos-de-vento/',
     featured: false,
-    challenge: 'Criação de espaço de acolhimento e recepção integrado ao auditório e salas de aula médicas.',
-    solution: 'Acabamentos nobres, iluminação linear contínua e integração visual harmoniosa com áreas externas.'
   },
   {
     id: 'hmv-auditorio-sap',
@@ -31,10 +29,13 @@ export const PROJECTS = [
     area: 'Auditório & Foyer',
     norm: 'Acústica de Precisão',
     image: '/images/obras/hmv-auditorio.webp',
+    gallery: [
+      '/images/obras/hmv-auditorio-02.webp',
+      '/images/obras/hmv-auditorio-03.webp',
+      '/images/obras/hmv-auditorio-04.webp'
+    ],
     externalUrl: 'https://www.formasefeito.com.br/portfolio/convivio-medico-hospital-moinhos-de-vento/',
     featured: false,
-    challenge: 'Construção de auditório médico com acústica de precisão para transmissão simultânea de procedimentos cirúrgicos e conferências.',
-    solution: 'Painéis acústicos difusores amadeirados, poltronas ergonômicas com bancada técnica e sistema de iluminação dimerizável.'
   },
   {
     id: 'hmv-centro-recuperacao',
@@ -46,10 +47,13 @@ export const PROJECTS = [
     area: 'Ala Cirúrgica',
     norm: 'Monitoramento Contínuo',
     image: '/images/obras/hmv-centro-recuperacao.webp',
+    gallery: [
+      '/images/obras/hmv-centro-recuperacao-02.webp',
+      '/images/obras/hmv-centro-recuperacao-03.webp',
+      '/images/obras/hmv-centro-recuperacao-04.webp'
+    ],
     externalUrl: 'https://www.formasefeito.com.br/portfolio/centro-de-oncologia-hospital-moinhos-de-vento/',
     featured: false,
-    challenge: 'Ampliação e modernização da sala de recuperação pós-anestésica anexa ao centro cirúrgico principal em plena atividade.',
-    solution: 'Réguas hospitalares completas para monitorização multiparamétrica de leitos, iluminação regulável e posto central com ampla visibilidade.'
   },
   {
     id: 'hmv-hub-linked',
@@ -61,10 +65,12 @@ export const PROJECTS = [
     area: 'Espaço Colaborativo',
     norm: 'Infraestrutura Tecnológica',
     image: '/images/obras/hmv-hub-linked.webp',
+    gallery: [
+      '/images/obras/hmv-hub-linked-02.webp',
+      '/images/obras/hmv-hub-linked-03.webp'
+    ],
     externalUrl: 'https://www.formasefeito.com.br/portfolio/hospital-moinhos-de-vento/',
     featured: false,
-    challenge: 'Adaptação de ambiente tecnológico multiuso integrando startups de saúde e pesquisadores médicos.',
-    solution: 'Instalação de cabeamento estruturado de alta capacidade, climatização de precisão e layout modular aberto.'
   },
   {
     id: 'hmv-cti-adulto',
@@ -76,25 +82,30 @@ export const PROJECTS = [
     area: '1.200 m²',
     norm: 'RDC 50 ANVISA',
     image: '/images/obras/hmv-uti-adulto-01.webp',
+    gallery: [
+      '/images/obras/hmv-uti-adulto-02.webp',
+      '/images/obras/hmv-uti-adulto-03.webp',
+      '/images/obras/hmv-uti-adulto-04.webp',
+      '/images/obras/hmv-uti-adulto-05.webp',
+      '/images/obras/hmv-uti-adulto-06.webp',
+      '/images/obras/hmv-uti-adulto-07.webp'
+    ],
     externalUrl: 'https://www.formasefeito.com.br/portfolio/centro-de-oncologia-hospital-moinhos-de-vento/',
     featured: true,
-    challenge: 'Implantação de unidade de cuidados intensivos com leitos individualizados de isolamento sob pressão controlada e monitoramento hemodinâmico contínuo.',
-    solution: 'Piso vinílico condutivo com dissipação estática, iluminação circadiana para conforto dos pacientes, antecâmaras com intertravamento e filtragem de ar HEPA absoluta.'
   },
   {
-    id: 'hdp-setimo-andar',
-    title: 'Construção do 7º Andar em Hospital Ativo',
+    id: 'hdp-oitavo-andar',
+    title: 'Construção do 8º Andar em Hospital Ativo',
     client: 'Hospital Divina Providência',
     location: 'Porto Alegre / RS',
     category: 'hospitalar',
     categoryLabel: 'Superestrutura',
     area: '1.822 m²',
     norm: 'Bloco Cirúrgico',
-    image: '/images/obras/hdp-setimo-andar.webp',
+    image: '/images/obras/hdp-oitavo-andar.webp',
+    description: 'Área de ampliação 1.822,30 m² onde funciona o Bloco Cirúrgico, CME, UTI. Sala de recuperação e áreas de apoio. Obra complexa, que exigiu a retirada do telhado do último pavimento.',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/setimo-andar-hospital-divina-providencia/',
     featured: true,
-    challenge: 'Construção de superestrutura metálica no topo do hospital ativo para abrigar Bloco Cirúrgico de Alta Complexidade, CME e CTI, ocupando 90% da projeção do hospital.',
-    solution: 'Retirada controlada do telhado existente e montagem de estrutura metálica leve com lajes steel deck sem nenhuma paralisação das atividades hospitalares nos andares inferiores.'
   },
   {
     id: 'hmv-acelerador-linear',
@@ -106,10 +117,12 @@ export const PROJECTS = [
     area: 'Concreto Baritado',
     norm: 'Alta Densidade',
     image: '/images/obras/hmv-acelerador-linear.webp',
+    gallery: [
+      '/images/obras/hmv-centro-cancer.webp',
+      '/images/obras/hmv-acelerador-linear-03.webp'
+    ],
     externalUrl: 'https://www.formasefeito.com.br/portfolio/centro-de-oncologia-hospital-moinhos-de-vento/',
     featured: true,
-    challenge: 'Execução de búnquer para acelerador linear de última geração com rigorosa blindagem de concreto baritado e conformidade estrita CNEN.',
-    solution: 'Controle de dosagem de concreto baritado de alta densidade, portas de chumbo maciço motorizadas e sistema dedicado de exaustão e climatização.'
   },
   {
     id: 'colegio-bom-conselho',
@@ -121,10 +134,13 @@ export const PROJECTS = [
     area: '6.500 m²',
     norm: 'Fachada de 1900',
     image: '/images/obras/colegio-bom-conselho-fachada.webp',
+    gallery: [
+      '/images/obras/colegio-bom-conselho-obra.webp',
+      '/images/obras/colegio-bom-conselho-fachada-02.webp'
+    ],
+    description: 'Reforma com ampliação do Colégio Bom Conselho, quatro andares do seu interior foram completamente demolidos, ficando somente as paredes externas, contando inclusive com reconstrução de todo pátio e calçada. Sendo reconstruído com um andar a mais e com nova distribuição interna, mantendo as características arquitetônicas da fachada.',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/colegio-bom-conselho-ampliacao/',
     featured: true,
-    challenge: 'Demolição interna integral de prédio centenário de quatro andares, preservando unicamente as paredes externas e adicionando um quinto pavimento estrutural.',
-    solution: 'Cimbramento metálico pesado externo para travamento de paredes históricas e reconstrução de lajes com nova malha estrutural interna independente.'
   },
   {
     id: 'hmv-centro-cancer',
@@ -136,10 +152,9 @@ export const PROJECTS = [
     area: 'Centro Oncológico',
     norm: 'RDC 50 ANVISA',
     image: '/images/obras/hmv-centro-cancer.webp',
+    description: 'Remodelação do Centro de Oncologia do Hospital Moinhos de Vento pela Formas & Efeito, transformando-o no Centro de Oncologia mais moderno do Sul do país e um dos principais núcleos de referência no tratamento da doença.',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/centro-de-oncologia-hospital-moinhos-de-vento/',
-    featured: false,
-    challenge: 'Instalações de alta complexidade para consultas oncológicas, triagem e infusão em ambiente humanizado.',
-    solution: 'Layout planejado com fluxos assépticos protegidos, controle de ventilação e acabamentos bacteriostáticos.'
+    featured: false
   },
   {
     id: 'hmv-unique-internacao',
@@ -151,10 +166,9 @@ export const PROJECTS = [
     area: 'Ala de Internação',
     norm: 'Bloco B',
     image: '/images/obras/hmv-unique-internacao.webp',
+    description: 'Execução das obras civis e instalações da área de internação, UNIQUE, quinto andar do bloco B.',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/emergencia-hospital-moinhos-de-vento/',
     featured: false,
-    challenge: 'Execução de obras civis e instalações prediais de alta complexidade para ala de internação premium no 5º andar do Bloco B.',
-    solution: 'Acabamentos nobres bacteriostáticos, isolamento acústico entre apartamentos, postos de enfermagem ergonômicos e automação hospitalar.'
   },
   {
     id: 'hdp-reforco-fundacoes',
@@ -166,10 +180,16 @@ export const PROJECTS = [
     area: '3 Pilares',
     norm: 'Carga Ativa',
     image: '/images/obras/hdp-reforco-fundacao-01.webp',
+    gallery: [
+      '/images/obras/hdp-ampliacao-bloco-a.webp',
+      '/images/obras/hdp-ampliacao-subsolo.webp',
+      '/images/obras/hdp-reforco-fundacao-02.webp',
+      '/images/obras/hdp-reforco-fundacao-03.webp',
+      '/images/obras/hdp-reforco-fundacao-04.webp'
+    ],
+    description: 'Rebaixamento das fundações diretas (sapatas) de três pilares do bloco A, prédio de sete andares, para ampliação da área de Pronto Atendimento.',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/hospital-divina-providencia/',
     featured: false,
-    challenge: 'Rebaixamento geotécnico de fundações diretas de três pilares de edifício de 7 andares para ampliação do Pronto Atendimento.',
-    solution: 'Escoramento com macacos hidráulicos automatizados, transferência contínua de esforços e criação de novas sapatas em subsolo confinado com carga ativa.'
   },
   {
     id: 'hmd-acesso-principal',
@@ -183,23 +203,30 @@ export const PROJECTS = [
     image: '/images/obras/hmd-acesso-principal.webp',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/hospital-mae-de-deus/',
     featured: false,
-    challenge: 'Reforma do acesso principal do hospital sem interrupção do fluxo de emergência, visitantes e ambulâncias.',
-    solution: 'Faseamento de intervenções, demolições silenciosas noturnas, isolamento com anteparo de contenção e pisos de alta durabilidade.'
   },
   {
-    id: 'hmd-ucg-recepcao',
-    title: 'Unidade Carlos Gomes — Recepção e Espera',
+    id: 'hmd-ucg',
+    title: 'Hospital Mãe de Deus — Unidade Carlos Gomes (UCG)',
     client: 'Hospital Mãe de Deus',
     location: 'Porto Alegre / RS',
     category: 'hospitalar',
-    categoryLabel: 'Recepção & Atendimento',
-    area: 'Recepção e espera',
-    norm: 'Fluxos & Acolhimento',
+    categoryLabel: 'Centro Cirúrgico & Ambulatório',
+    area: 'Unidade Ambulatorial',
+    norm: 'RDC 50 ANVISA',
     image: '/images/obras/hmd-ucg-recepcao.webp',
+    gallery: [
+      '/images/obras/hmd-ucg-02.webp',
+      '/images/obras/hmd-ucg-03.webp',
+      '/images/obras/hmd-ucg-04.webp',
+      '/images/obras/hmd-ucg-05.webp',
+      '/images/obras/hmd-ucg-06.webp',
+      '/images/obras/hmd-ucg-07.webp',
+      '/images/obras/hmd-ucg-08.webp',
+      '/images/obras/hmd-ucg-09.webp',
+      '/images/obras/hmd-ucg-10.webp'
+    ],
     externalUrl: 'https://www.formasefeito.com.br/portfolio/hospital-mae-de-deus/',
     featured: false,
-    challenge: 'Recepção e sala de espera da Unidade Carlos Gomes, com postos de atendimento e assentos para pacientes.',
-    solution: 'Ambiente de atendimento com balcões identificados e áreas de espera organizadas.'
   },
   {
     id: 'puc-oncoclinicas-posto',
@@ -213,8 +240,6 @@ export const PROJECTS = [
     image: '/images/obras/puc-oncoclinicas-posto.webp',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/quimioterapia-oncoclinicas-pucrs/',
     featured: false,
-    challenge: 'Adaptação de unidade de infusão quimioterápica com postos centrais de enfermagem e linha de visão 360° para segurança medicamentosa.',
-    solution: 'Mobiliário em superfícies não porosas Corian, iluminação técnica antiofuscamento e fluxo estéril rigoroso.'
   },
   {
     id: 'hmv-laboratorio-patologia',
@@ -228,8 +253,6 @@ export const PROJECTS = [
     image: '/images/obras/hmv-laboratorio-patologia.webp',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/laboratorio-patologia-hospital-moinhos-de-vento/',
     featured: false,
-    challenge: 'Instalação de capelas de exaustão química para manuseio de reagentes biológicos e solventes com descarte seguro.',
-    solution: 'Tubulações em materiais resistentes a corrosão, sistemas de exaustão com controle de tiragem e piso antiderrapante asséptico.'
   },
   {
     id: 'hmv-saguao-sap',
@@ -243,8 +266,6 @@ export const PROJECTS = [
     image: '/images/obras/hmv-saguao-espera.webp',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/convivio-medico-hospital-moinhos-de-vento/',
     featured: false,
-    challenge: 'Interligação entre setores administrativos, acadêmicos e assistenciais com alta demanda de circulação.',
-    solution: 'Piso vinílico de alta resistência, sinalização direcional integrada e proteção termoacústica.'
   },
   {
     id: 'raioson-gravatai',
@@ -256,9 +277,8 @@ export const PROJECTS = [
     area: '2.470,00 m²',
     norm: 'Ressonância & TC',
     image: '/images/obras/raioson-gravatai.webp',
+    description: 'Construção de um novo prédio com 2.470 m² para o Centro Clínico Raio Som, composto de subsolo (estacionamento), recepção, tomografia, ressonância magnética, mamografia, densitometria óssea, salas de raio X, salas de ecografia, áreas de apoio.',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/centro-clinico-raio-som/',
     featured: false,
-    challenge: 'Construção de complexo de diagnóstico com subsolo de estacionamento, recepções, tomografia, ressonância magnética, mamografia e raio-X.',
-    solution: 'Cálculo e execução de baritagem de paredes com espessuras milimétricas e redes de energia estabilizada com redundância.'
   }
 ];
