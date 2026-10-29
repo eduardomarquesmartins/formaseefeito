@@ -135,8 +135,7 @@ export const PROJECTS = [
     norm: 'Fachada de 1900',
     image: '/images/obras/colegio-bom-conselho-fachada.webp',
     gallery: [
-      '/images/obras/colegio-bom-conselho-obra.webp',
-      '/images/obras/colegio-bom-conselho-fachada-02.webp'
+      '/images/obras/colegio-bom-conselho-obra.webp'
     ],
     description: 'Reforma com ampliação do Colégio Bom Conselho, quatro andares do seu interior foram completamente demolidos, ficando somente as paredes externas, contando inclusive com reconstrução de todo pátio e calçada. Sendo reconstruído com um andar a mais e com nova distribuição interna, mantendo as características arquitetônicas da fachada.',
     externalUrl: 'https://www.formasefeito.com.br/portfolio/colegio-bom-conselho-ampliacao/',

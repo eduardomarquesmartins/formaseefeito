@@ -77,5 +77,7 @@ export const INSTAGRAM_POSTS = [
 ];
 
 export async function fetchInstagramFeed() {
-  return INSTAGRAM_POSTS.slice(0, INSTAGRAM_CONFIG.postsLimit);
+  return [...INSTAGRAM_POSTS]
+    .sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp))
+    .slice(0, INSTAGRAM_CONFIG.postsLimit);
 }
