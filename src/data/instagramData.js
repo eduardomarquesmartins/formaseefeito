@@ -8,6 +8,43 @@ export const INSTAGRAM_CONFIG = {
 
 export const INSTAGRAM_POSTS = [
   {
+    id: 'De9x4I4vx3v',
+    caption: 'Hoje é o dia de reconhecer quem constrói, literalmente, cada projeto que assinamos.\n\nNosso trabalho só é possível graças às equipes que estão na obra, todos os dias, transformando planejamento em realidade.\n\n#DiaDoTrabalhadorDaConstruçãoCivil #ConstruçãoCivil #GerenciamentoDeObras #FormasEEfeito',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-10-26-dia-do-trabalhador-construcao.webp',
+    thumbnail_url: '/images/instagram/2026-10-26-dia-do-trabalhador-construcao.webp',
+    timestamp: '2026-10-26T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/De9x4I4vx3v/',
+    likes: 11,
+    slides: []
+  },
+  {
+    id: 'DexSZ6mj0Zo',
+    caption: 'Reformar um ambiente hospitalar em funcionamento exige planejamento redobrado.\n\nNormas técnicas, continuidade do atendimento e controle de cronograma são alguns dos pontos que analisamos antes de qualquer obra começar.\n\n#GerenciamentoDeObras #ConstruçãoHospitalar #PlanejamentoDeObra #EngenhariaEArquitetura #FormasEEfeito',
+    post_format: 'CAROUSEL',
+    media_type: 'CAROUSEL_ALBUM',
+    media_url: '/images/instagram/2026-10-21-planejamento-hospitalar.webp',
+    thumbnail_url: '/images/instagram/2026-10-21-planejamento-hospitalar.webp',
+    timestamp: '2026-10-21T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DexSZ6mj0Zo/',
+    likes: 21,
+    slides: [
+      { id: 'DexSZ6mj0Zo-1', media_type: 'IMAGE', media_url: '/images/instagram/2026-10-21-planejamento-hospitalar.webp' },
+      { id: 'DexSZ6mj0Zo-2', media_type: 'IMAGE', media_url: '/images/instagram/2026-10-21-planejamento-hospitalar-02.webp' }
+    ]
+  },
+  {
+    id: 'DepC9LPxNqG',
+    caption: 'No Dia do Médico, nossa homenagem a quem dedica a vida a cuidar das pessoas.\n\nHá mais de duas décadas atuamos no setor hospitalar, e cada ambiente que entregamos é pensado para dar segurança e condições ideais de trabalho a esses profissionais.\n\nObrigado por tudo que vocês fazem.\n\n#DiaDoMédico #ConstruçãoHospitalar #InfraestruturaHospitalar #EngenhariaHospitalar #FormasEEfeito',
+    media_type: 'IMAGE',
+    media_url: '/images/instagram/2026-10-18-dia-do-medico.webp',
+    thumbnail_url: '/images/instagram/2026-10-18-dia-do-medico.webp',
+    timestamp: '2026-10-18T12:00:00-03:00',
+    permalink: 'https://www.instagram.com/p/DepC9LPxNqG/',
+    likes: 3,
+    slides: []
+  },
+  {
     id: 'DeKtztMvNim',
     caption: 'Neste Outubro Rosa, reforçamos a importância do autoexame, da mamografia e do acompanhamento médico regular. O diagnóstico precoce aumenta muito as chances de cura. Cuide de você e incentive quem você ama a fazer o mesmo. #OutubroRosa #CâncerDeMama #DiagnósticoPrecoce #Prevenção #FormasEEfeito',
     media_type: 'IMAGE',
@@ -16,39 +53,6 @@ export const INSTAGRAM_POSTS = [
     timestamp: '2026-10-06T12:00:00-03:00',
     permalink: 'https://www.instagram.com/p/DeKtztMvNim/',
     likes: 9,
-    slides: []
-  },
-  {
-    id: 'DdrzwLOPniL',
-    caption: 'Atuamos na construção e no gerenciamento de projetos e obras, do planejamento à entrega. Temos atuação especializada no setor hospitalar, área que exige atenção redobrada a normas técnicas, segurança e prazos, e é justamente nesse tipo de obra que construímos boa parte da nossa experiência. #GerenciamentoDeObras #ConstruçãoHospitalar #ProjetosDeEngenharia #ObrasComQualidade #InfraestruturaHospitalar',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-09-24-atuacao.webp',
-    thumbnail_url: '/images/instagram/2026-09-24-atuacao.webp',
-    timestamp: '2026-09-24T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DdrzwLOPniL/',
-    likes: 27,
-    slides: []
-  },
-  {
-    id: 'Dd7QfKYPR61',
-    caption: 'Ao longo de mais de três décadas, acumulamos experiência técnica em diferentes tipos de obra, o que chamamos de know-how: o conhecimento prático que só se constrói com tempo e repertório. É essa bagagem que nos permite lidar com desafios específicos, como os do setor hospitalar, unindo tradição e atualização constante às novas exigências do mercado. #Autoridade #ExperiênciaTécnica #EngenhariaHospitalar #TradiçãoETecnologia #ConfiançaEmCadaObra',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-09-30-experiencia.webp',
-    thumbnail_url: '/images/instagram/2026-09-30-experiencia.webp',
-    timestamp: '2026-09-30T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/Dd7QfKYPR61/',
-    likes: 12,
-    slides: []
-  },
-  {
-    id: 'DdpPxtaPATN',
-    caption: 'A Formas & Efeito atua no mercado de engenharia desde 1993, unindo tradição familiar e experiência técnica em cada projeto. Ao longo desses mais de 30 anos, construímos uma trajetória sólida, sempre acompanhando as transformações do setor sem perder nossa essência. #FormasEEfeito #Engenharia #EmpresaFamiliar #TrajetoriaSolida #ConstruçãoCivil',
-    media_type: 'IMAGE',
-    media_url: '/images/instagram/2026-09-23-historia.webp',
-    thumbnail_url: '/images/instagram/2026-09-23-historia.webp',
-    timestamp: '2026-09-23T12:00:00-03:00',
-    permalink: 'https://www.instagram.com/p/DdpPxtaPATN/',
-    likes: 19,
     slides: []
   },
   {

@@ -117,10 +117,6 @@ export const PROJECTS = [
     area: 'Concreto Baritado',
     norm: 'Alta Densidade',
     image: '/images/obras/hmv-acelerador-linear.webp',
-    gallery: [
-      '/images/obras/hmv-centro-cancer.webp',
-      '/images/obras/hmv-acelerador-linear-03.webp'
-    ],
     externalUrl: 'https://www.formasefeito.com.br/portfolio/centro-de-oncologia-hospital-moinhos-de-vento/',
     featured: true,
   },
